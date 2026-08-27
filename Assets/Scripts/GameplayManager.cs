@@ -2,15 +2,13 @@ using UnityEngine;
 
 public class GameplayManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private InputSystem_Actions inputSystem;
+    [SerializeField] private MovementController movementController;
+    
+    private void Awake()
     {
-        
+        inputSystem = new InputSystem_Actions();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
+    private void Update()
 }
