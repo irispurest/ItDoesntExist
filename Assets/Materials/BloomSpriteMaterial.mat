@@ -57,7 +57,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _BloomStrength: 3
+    - _BloomStrength: 5
     - _EnableExternalAlpha: 0
     - _Fuzziness: 0
     - _NormalStrength: 5

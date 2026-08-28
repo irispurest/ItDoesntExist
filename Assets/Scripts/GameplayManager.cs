@@ -1,4 +1,6 @@
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class GameplayManager : MonoBehaviour
 {
@@ -9,6 +11,14 @@ public class GameplayManager : MonoBehaviour
     {
         inputSystem = new InputSystem_Actions();
     }
-    
-    private void Update()
+
+    private void OnEnable()
+    {
+        inputSystem.Enable();
+    }
+
+    private void FixedUpdate()
+    {
+        movementController.ProcessInput(inputSystem.Player.Move.ReadValue<Vector2>());
+    }
 }
