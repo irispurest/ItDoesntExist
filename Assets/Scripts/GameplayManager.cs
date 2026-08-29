@@ -6,7 +6,8 @@ public class GameplayManager : MonoBehaviour
 {
     private InputSystem_Actions inputSystem;
     [SerializeField] private MovementController movementController;
-    
+    [SerializeField] private InteractionController interactionController;
+
     private void Awake()
     {
         inputSystem = new InputSystem_Actions();
@@ -15,9 +16,16 @@ public class GameplayManager : MonoBehaviour
     private void OnEnable()
     {
         inputSystem.Enable();
+        inputSystem.Player.Interact.performed += interactionController.Interact;
     }
 
-    private void FixedUpdate()
+    private void OnDisable()
+    {
+        inputSystem.Disable();
+        inputSystem.Player.Interact.performed -= interactionController.Interact;
+    }
+
+private void FixedUpdate()
     {
         movementController.ProcessInput(inputSystem.Player.Move.ReadValue<Vector2>());
     }

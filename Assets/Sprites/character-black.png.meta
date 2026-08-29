@@ -123,8 +123,8 @@ TextureImporter:
         y: 0
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -145,8 +145,8 @@ TextureImporter:
         y: 0
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -172,6 +172,8 @@ TextureImporter:
     secondaryTextures:
     - texture: {fileID: 2800000, guid: 05edb84041c7ab44b8d8feec4e7bcd95, type: 3}
       name: _NormalMap
+    - texture: {fileID: 2800000, guid: 8daf1136aa3c89b4da782ddfb879ac66, type: 3}
+      name: _MaskTex
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings

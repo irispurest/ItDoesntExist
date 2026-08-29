@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: AltarFireMaterial
+  m_Name: DefaultFire
   m_Shader: {fileID: -6465566751694194690, guid: a2492e22b32dee94eaf0bdf68a4f6ec8, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -48,9 +48,9 @@ Material:
     - _PixelScale: 24
     m_Colors:
     - White: {r: 1, g: 1, b: 1, a: 1}
-    - _Color1: {r: 1, g: 0.18475857, b: 0.07058823, a: 1}
-    - _Color2: {r: 1, g: 0.31541097, b: 0, a: 1}
-    - _Color3: {r: 1, g: 0.88714695, b: 0, a: 1}
+    - _Color1: {r: 1, g: 0.07058823, b: 0.08917246, a: 1}
+    - _Color2: {r: 1, g: 0.24056602, b: 0.4162783, a: 1}
+    - _Color3: {r: 1, g: 0.3820755, b: 0.9079172, a: 1}
     - _Direction: {r: 0, g: -0.4, b: 0, a: 0}
     - _Step: {r: 0.1, g: 0.3, b: 0.65, a: 0}
   m_BuildTextureStacks: []
