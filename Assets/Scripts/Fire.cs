@@ -10,13 +10,15 @@ public class Fire : Interactable
     [SerializeField] private CircleCollider2D lightTrigger;
     [SerializeField] private Light2D light;
     [SerializeField] private List<ManifestedObject> affectedObjects;
-    [SerializeField] private bool isEnabled;
     [SerializeField] private float fadeDuration;
+    [SerializeField] private bool extinguishable;
     
     private Material materialInstance;
     private float maxIntensity;
     private int intensityPropertyID;
     private bool isFading;
+    
+    [field: SerializeField] public bool IsEnabled { private set; get; }
 
     private void Awake()
     {
@@ -24,7 +26,7 @@ public class Fire : Interactable
         intensityPropertyID = Shader.PropertyToID("_Intensity");
         maxIntensity = light.intensity;
 
-        if (!isEnabled)
+        if (!IsEnabled)
         {
             lightTrigger.enabled = false;
             light.intensity = 0f;
@@ -32,26 +34,35 @@ public class Fire : Interactable
             foreach (var affectedObject in affectedObjects)
                 affectedObject.Despawn();
         }
+
+        foreach (var affectedObject in affectedObjects)
+        {
+            affectedObject.OnDespawn += () => TrySpawn(affectedObject);
+            TrySpawn(affectedObject);
+        }
+        
+    }
+
+    private void TrySpawn(ManifestedObject obj)
+    {
+        if (IsEnabled && !obj.CheckObstacles())
+            obj.Spawn();
     }
 
     public override void Interact()
     {
+        if (!extinguishable) return;
         if (isFading) return;
         
-        if (isEnabled)
+        if (IsEnabled)
             Extinguish();
         else
             LightFire();
     }
 
-    public bool LightTorch()
-    {
-        return isEnabled;
-    }
-
     private void Extinguish()
     {
-        isEnabled = false;
+        IsEnabled = false;
         isFading = true;
 
         DOTween.To(
@@ -70,7 +81,7 @@ public class Fire : Interactable
 
     private void LightFire()
     {
-        isEnabled = true;
+        IsEnabled = true;
         isFading = true;
         lightTrigger.enabled = true;
         

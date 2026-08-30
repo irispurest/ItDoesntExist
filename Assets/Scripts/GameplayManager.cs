@@ -17,12 +17,14 @@ public class GameplayManager : MonoBehaviour
     {
         inputSystem.Enable();
         inputSystem.Player.Interact.performed += interactionController.Interact;
+        inputSystem.Player.TurnTorch.performed += interactionController.TurnTorch;
     }
 
     private void OnDisable()
     {
         inputSystem.Disable();
         inputSystem.Player.Interact.performed -= interactionController.Interact;
+        inputSystem.Player.TurnTorch.performed -= interactionController.TurnTorch;
     }
 
 private void FixedUpdate()

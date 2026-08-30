@@ -40,9 +40,19 @@
                     "name": "Interact",
                     "type": "Button",
                     "id": "852140f2-7766-474d-8707-702459ba45f3",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "Hold",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
+                    "name": "TurnTorch",
+                    "type": "Button",
+                    "id": "96628e53-5998-4fe8-ad7e-0f788ad2f917",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "Press",
                     "initialStateCheck": false,
                     "priority": 0
                 },
@@ -458,6 +468,28 @@
                     "processors": "",
                     "groups": "Gamepad",
                     "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4118d96f-aff7-4679-ad1c-6f1a527019ca",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "TurnTorch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d963ffc5-5637-41b1-aa55-1acead0faa26",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "TurnTorch",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

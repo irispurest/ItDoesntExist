@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6441336030665763260}
   m_Layer: 3
   m_Name: Altar
-  m_TagString: Untagged
+  m_TagString: Transparent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -159,8 +159,9 @@ MonoBehaviour:
   lightTrigger: {fileID: 497524346043212611}
   light: {fileID: 3016402473604214522}
   affectedObjects: []
-  isEnabled: 1
-  fadeDuration: 0.3
+  fadeDuration: 0.7
+  extinguishable: 0
+  <IsEnabled>k__BackingField: 0
 --- !u!1 &6752845579780280615
 GameObject:
   m_ObjectHideFlags: 0
@@ -486,4 +487,4 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 4
+  m_Radius: 3.6
