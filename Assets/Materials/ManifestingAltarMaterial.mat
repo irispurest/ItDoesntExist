@@ -59,6 +59,7 @@ Material:
     m_Floats:
     - _BloomStrength: 3
     - _EnableExternalAlpha: 0
+    - _Intensity: 3
     - _NormalStrength: 0.5
     - _ZWrite: 0
     m_Colors:

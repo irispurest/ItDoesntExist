@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6441336030665763260}
   m_Layer: 3
   m_Name: ManifestingAltar
-  m_TagString: Untagged
+  m_TagString: Source
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -162,6 +162,9 @@ MonoBehaviour:
   - {fileID: 0}
   fadeDuration: 0.7
   extinguishable: 0
+  isLightingFires: 0
+  fireLighter: {fileID: 0}
+  isNonLightable: 0
   <IsEnabled>k__BackingField: 0
 --- !u!1 &6752845579780280615
 GameObject:
@@ -488,4 +491,4 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 3.6
+  m_Radius: 3

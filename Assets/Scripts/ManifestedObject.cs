@@ -37,6 +37,7 @@ public class ManifestedObject : MonoBehaviour
 
     public void Despawn()
     {
+        Debug.Log("Despawn " + gameObject.name);
         particleSystem.Play();
         IsEnabled = false;
         collider.enabled = false;

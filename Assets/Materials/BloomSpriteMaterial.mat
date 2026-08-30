@@ -60,6 +60,7 @@ Material:
     - _BloomStrength: 5
     - _EnableExternalAlpha: 0
     - _Fuzziness: 0
+    - _Intensity: 5
     - _NormalStrength: 5
     - _Range: 0.3
     - _ZWrite: 0

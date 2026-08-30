@@ -28,6 +28,11 @@ public class SceneLoader : MonoBehaviour
         fadeImage.DOFade(1.0f, fadeDuration).OnComplete(() => SwitchScene(scene));
     }
 
+    public void ReloadScene()
+    {
+        ExitScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
     private void EnterScene()
     {
         if (isFading) return;

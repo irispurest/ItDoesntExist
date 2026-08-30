@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6441336030665763260}
   m_Layer: 3
   m_Name: Altar
-  m_TagString: Untagged
+  m_TagString: Source
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -161,6 +161,8 @@ MonoBehaviour:
   affectedObjects: []
   fadeDuration: 0.7
   extinguishable: 0
+  isLightingFires: 0
+  isLightable: 0
   <IsEnabled>k__BackingField: 1
 --- !u!1 &6752845579780280615
 GameObject:

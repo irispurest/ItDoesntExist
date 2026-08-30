@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using Unity.VisualScripting;
 using UnityEngine.Rendering.Universal;
 
 public class Fire : Interactable
@@ -12,10 +13,15 @@ public class Fire : Interactable
     [SerializeField] private Light2D light;
     [SerializeField] private List<ManifestedObject> affectedObjects;
     [SerializeField] private float fadeDuration;
-    [SerializeField] private bool extinguishable;
+    public bool extinguishable;
     [SerializeField] private bool isLightingFires;
+    [SerializeField] private FireLighter fireLighter;
+    [SerializeField] private bool isNonLightable;
+    
+    private List<Fire> surroundingFires;
     
     private Material materialInstance;
+    private float maxFireIntensity;
     private float maxIntensity;
     private int intensityPropertyID;
     private bool isFading;
@@ -26,7 +32,27 @@ public class Fire : Interactable
     {
         materialInstance = renderer.material;
         intensityPropertyID = Shader.PropertyToID("_Intensity");
+        maxFireIntensity = materialInstance.GetFloat(intensityPropertyID);
         maxIntensity = light.intensity;
+        surroundingFires = new List<Fire>();
+
+        if (isLightingFires)
+        {
+            fireLighter.OnEnterFire += EnterFire;
+            fireLighter.OnExitFire += ExitFire;
+        }
+    }
+
+    private void EnterFire(Fire fire)
+    {
+        surroundingFires.Add(fire);
+        if (!fire.IsEnabled && IsEnabled)
+            LightFire();
+    }
+
+    private void ExitFire(Fire fire)
+    {
+        surroundingFires.Remove(fire);
     }
 
     private void Start()
@@ -52,7 +78,7 @@ public class Fire : Interactable
     IEnumerator TrySpawn(ManifestedObject obj)
     {
         yield return new WaitForEndOfFrame();
-        if (IsEnabled && !obj.IsEnabled && !obj.CheckObstacles())
+        if (obj != null && IsEnabled && !obj.IsEnabled && !obj.CheckObstacles())
             obj.Spawn();
     }
 
@@ -63,7 +89,7 @@ public class Fire : Interactable
         
         if (IsEnabled)
             Extinguish();
-        else
+        else if (!isNonLightable)
             LightFire();
     }
 
@@ -97,6 +123,12 @@ public class Fire : Interactable
             if (!affectedObject.IsEnabled)
                 affectedObject.Spawn();
         }
+
+        foreach (var fire in surroundingFires)
+        {
+            if (!fire.IsEnabled)
+                fire.LightFire();
+        }
         
         DOTween.To(
             () => light.intensity,
@@ -107,7 +139,7 @@ public class Fire : Interactable
         DOTween.To(
                 () => materialInstance.GetFloat(intensityPropertyID),
                 x => materialInstance.SetFloat(intensityPropertyID, x),
-                1f,
+                maxFireIntensity,
                 fadeDuration)
             .OnComplete(FinishLighting);
     }
