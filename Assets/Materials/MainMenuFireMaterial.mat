@@ -44,15 +44,15 @@ Material:
     - _BloomStrength: 1.2
     - _DistortionStrength: 0.148
     - _Intensity: 1
-    - _NoiseScale: 9.58
-    - _PixelScale: 128
+    - _NoiseScale: 12.83
+    - _PixelScale: 2000
     m_Colors:
     - White: {r: 1, g: 1, b: 1, a: 1}
     - _Color1: {r: 1, g: 0.18475857, b: 0.07058823, a: 1}
     - _Color2: {r: 1, g: 0.36335662, b: 0, a: 1}
     - _Color3: {r: 1, g: 0.55313706, b: 0, a: 1}
     - _Direction: {r: 0, g: -0.4, b: 0, a: 0}
-    - _Step: {r: 0.09, g: 0.39, b: 0.68, a: 0}
+    - _Step: {r: 0.08, g: 0.39, b: 0.68, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &5359780915081171907

@@ -1,14 +1,11 @@
 using System;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
-using UnityEngine.UI;
 
 public class ManifestedObject : MonoBehaviour
 {
     [SerializeField] private LayerMask raycastLayerMask;
-    [SerializeField] private string transparentTag;
     private SpriteRenderer[] childRenderers;
     private List<Collider2D> lightSources;
     private Collider2D collider;
@@ -17,8 +14,7 @@ public class ManifestedObject : MonoBehaviour
     private ParticleSystem particleSystem;
     public bool IsEnabled { private set; get; }
     public Action OnDespawn;
-
-    private Vector2 hitPoint;
+    public Action OnSpawn;
     
     private void Awake()
     {
@@ -44,7 +40,7 @@ public class ManifestedObject : MonoBehaviour
         particleSystem.Play();
         IsEnabled = false;
         collider.enabled = false;
-        shadowCaster.enabled = false;
+        if (shadowCaster != null) shadowCaster.enabled = false;
         foreach (SpriteRenderer renderer in childRenderers)
             renderer.enabled = false;
         OnDespawn?.Invoke();
@@ -55,10 +51,11 @@ public class ManifestedObject : MonoBehaviour
         transform.position = originalPosition;
         IsEnabled = true;
         collider.enabled = true;
-        shadowCaster.enabled = true;
+        if (shadowCaster != null)  shadowCaster.enabled = true;
         particleSystem.Play();
         foreach (SpriteRenderer renderer in childRenderers)
             renderer.enabled = true;
+        OnSpawn?.Invoke();
     }
 
     public bool CheckObstacles()
@@ -79,7 +76,6 @@ public class ManifestedObject : MonoBehaviour
                 if (hit.collider != collider && hit.collider.TryGetComponent(out BlockLight _))
                 {
                     lightSourceCount--;
-                    hitPoint = hit.point;
                     break;
                 }
             }
@@ -104,11 +100,5 @@ public class ManifestedObject : MonoBehaviour
         {
             Despawn();
         }
-    }
-
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawSphere(hitPoint, 0.1f);
     }
 }

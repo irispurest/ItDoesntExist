@@ -13,6 +13,7 @@ public class Fire : Interactable
     [SerializeField] private List<ManifestedObject> affectedObjects;
     [SerializeField] private float fadeDuration;
     [SerializeField] private bool extinguishable;
+    [SerializeField] private bool isLightingFires;
     
     private Material materialInstance;
     private float maxIntensity;
@@ -41,14 +42,17 @@ public class Fire : Interactable
         
         foreach (var affectedObject in affectedObjects)
         {
-            affectedObject.OnDespawn += () => StartCoroutine(TrySpawn(affectedObject));
+            affectedObject.OnDespawn += () =>
+            {
+                StartCoroutine(TrySpawn(affectedObject));
+            };
         }
     }
 
     IEnumerator TrySpawn(ManifestedObject obj)
     {
         yield return new WaitForEndOfFrame();
-        if (IsEnabled && !obj.CheckObstacles())
+        if (IsEnabled && !obj.IsEnabled && !obj.CheckObstacles())
             obj.Spawn();
     }
 
@@ -90,7 +94,6 @@ public class Fire : Interactable
         
         foreach (var affectedObject in affectedObjects)
         {
-            Debug.Log(affectedObject.IsEnabled);
             if (!affectedObject.IsEnabled)
                 affectedObject.Spawn();
         }
