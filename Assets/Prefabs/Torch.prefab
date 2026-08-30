@@ -292,7 +292,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 62fba85bff74dfb4e82878d84ebc5adc, type: 2}
+  - {fileID: 2100000, guid: cbe8a61d218ff224b8a66ba2a9639ca1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -340,7 +340,7 @@ GameObject:
   - component: {fileID: 2306123879704121701}
   m_Layer: 3
   m_Name: Torch
-  m_TagString: Transparent
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -389,7 +389,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dc6418c39e9f58f4d8875084dbbd2f78, type: 2}
+  - {fileID: 2100000, guid: e3814a937be6a5d42a18f8b132cefd02, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

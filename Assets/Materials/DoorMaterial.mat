@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: DefaultFire
-  m_Shader: {fileID: -6465566751694194690, guid: a2492e22b32dee94eaf0bdf68a4f6ec8, type: 3}
+  m_Name: DoorMaterial
+  m_Shader: {fileID: -6465566751694194690, guid: 30c830254f171d04b82910ba5655c6c6, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -23,8 +23,24 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 86c381fa47a856042ad2615e4e5ed93f, type: 3}
+        m_Texture: {fileID: 2800000, guid: 44ce372997d41f24da4c9c3a166b95f2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normal:
+        m_Texture: {fileID: 2800000, guid: 9fa0f60475bc15a499a9875c132a954f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -41,21 +57,16 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _BloomStrength: 2
-    - _DistortionStrength: 0.2
-    - _Intensity: 1
-    - _NoiseScale: 6
-    - _PixelScale: 24
+    - _EnableExternalAlpha: 0
+    - _NormalStrength: 8
+    - _ZWrite: 0
     m_Colors:
     - White: {r: 1, g: 1, b: 1, a: 1}
-    - _Color1: {r: 1, g: 0.07058823, b: 0.08917246, a: 1}
-    - _Color2: {r: 1, g: 0.24056602, b: 0.4162783, a: 1}
-    - _Color3: {r: 1, g: 0.3820755, b: 0.9079172, a: 1}
-    - _Direction: {r: 0, g: -0.4, b: 0, a: 0}
-    - _Step: {r: 0.1, g: 0.3, b: 0.65, a: 0}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!114 &5359780915081171907
+--- !u!114 &6903650212891978687
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}

@@ -15,40 +15,36 @@ public class ManifestedObject : MonoBehaviour
     private ShadowCaster2D shadowCaster;
     private Vector3 originalPosition;
     private ParticleSystem particleSystem;
-    private bool isAwake;
     public bool IsEnabled { private set; get; }
     public Action OnDespawn;
+
+    private Vector2 hitPoint;
     
     private void Awake()
     {
         childRenderers = GetComponentsInChildren<SpriteRenderer>();
         lightSources = new List<Collider2D>();
-        collider = GetComponent<Collider2D>();
         shadowCaster = GetComponent<ShadowCaster2D>();
         originalPosition = transform.position;
         particleSystem = GetComponentInChildren<ParticleSystem>();
-        
-        IsEnabled = false;
-        collider.enabled = false;
-        shadowCaster.enabled = false;
-        foreach (SpriteRenderer renderer in childRenderers)
-            renderer.enabled = false;
-        isAwake = true;
+        collider = GetComponent<Collider2D>();
+        IsEnabled = true;
     }
 
     private void FixedUpdate()
     {
         if (CheckObstacles())
+        {
             Despawn();
+        }
     }
 
     public void Despawn()
     {
-        if (!isAwake) return;
+        particleSystem.Play();
         IsEnabled = false;
         collider.enabled = false;
         shadowCaster.enabled = false;
-        particleSystem.Play();
         foreach (SpriteRenderer renderer in childRenderers)
             renderer.enabled = false;
         OnDespawn?.Invoke();
@@ -56,7 +52,6 @@ public class ManifestedObject : MonoBehaviour
 
     public void Spawn()
     {
-        if (!isAwake) return;
         transform.position = originalPosition;
         IsEnabled = true;
         collider.enabled = true;
@@ -74,23 +69,20 @@ public class ManifestedObject : MonoBehaviour
         
         foreach (Collider2D lightSource in lightSources)
         {
-            Vector2 direction = (lightSource.transform.position - transform.position).normalized;
-            float distance = (lightSource.transform.position - transform.position).magnitude;
+            Vector2 direction = (lightSource.transform.position - collider.bounds.center).normalized;
+            float distance = (lightSource.transform.position - collider.bounds.center).magnitude;
 
-            var hits = Physics2D.RaycastAll(transform.position, direction, distance, raycastLayerMask);
-
-            Debug.Log("Check " + lightSource.name + ": hits " + hits.Length);
+            var hits = Physics2D.RaycastAll(collider.bounds.center, direction, distance, raycastLayerMask);
+            
             foreach (RaycastHit2D hit in hits)
             {
-                if (hit.collider != collider && !hit.collider.CompareTag(transparentTag))
+                if (hit.collider != collider && hit.collider.TryGetComponent(out BlockLight _))
                 {
-                    Debug.Log("Obstacle found " + hit.collider.name);
                     lightSourceCount--;
+                    hitPoint = hit.point;
                     break;
                 }
             }
-            
-            Debug.Log("Available lights: " + lightSourceCount);
         }
         
         return lightSourceCount == 0;
@@ -108,6 +100,15 @@ public class ManifestedObject : MonoBehaviour
         if (!other.CompareTag("Light") || !lightSources.Contains(other)) return;
         
         lightSources.Remove(other);
-        if (lightSources.Count == 0 && IsEnabled) Despawn();
+        if (lightSources.Count == 0 && IsEnabled)
+        {
+            Despawn();
+        }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawSphere(hitPoint, 0.1f);
     }
 }

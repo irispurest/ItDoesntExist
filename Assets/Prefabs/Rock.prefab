@@ -4999,6 +4999,7 @@ GameObject:
   - component: {fileID: 4083094922620705246}
   - component: {fileID: 7451840210617360288}
   - component: {fileID: 5483811536414262589}
+  - component: {fileID: -3707859752706401472}
   - component: {fileID: 468358597315203609}
   m_Layer: 0
   m_Name: Rock
@@ -5308,6 +5309,18 @@ MonoBehaviour:
           m_Image: {fileID: 0}
           m_Tooltip: 
           m_TextWithWhitespace: "Shape Editor\u200B"
+--- !u!114 &-3707859752706401472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5161630253810015433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d263b7f6e4d0ca49a411c085790a276, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BlockLight
 --- !u!50 &468358597315203609
 Rigidbody2D:
   serializedVersion: 5

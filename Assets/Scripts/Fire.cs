@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
@@ -25,7 +26,10 @@ public class Fire : Interactable
         materialInstance = renderer.material;
         intensityPropertyID = Shader.PropertyToID("_Intensity");
         maxIntensity = light.intensity;
+    }
 
+    private void Start()
+    {
         if (!IsEnabled)
         {
             lightTrigger.enabled = false;
@@ -34,17 +38,16 @@ public class Fire : Interactable
             foreach (var affectedObject in affectedObjects)
                 affectedObject.Despawn();
         }
-
+        
         foreach (var affectedObject in affectedObjects)
         {
-            affectedObject.OnDespawn += () => TrySpawn(affectedObject);
-            TrySpawn(affectedObject);
+            affectedObject.OnDespawn += () => StartCoroutine(TrySpawn(affectedObject));
         }
-        
     }
 
-    private void TrySpawn(ManifestedObject obj)
+    IEnumerator TrySpawn(ManifestedObject obj)
     {
+        yield return new WaitForEndOfFrame();
         if (IsEnabled && !obj.CheckObstacles())
             obj.Spawn();
     }

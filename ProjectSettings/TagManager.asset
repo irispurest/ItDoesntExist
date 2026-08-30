@@ -6,7 +6,6 @@ TagManager:
   tags:
   - Light
   - Pushable
-  - Transparent
   layers:
   - Default
   - TransparentFX
@@ -15,7 +14,7 @@ TagManager:
   - Water
   - UI
   - Player
-  - 
+  - Fog
   - 
   - 
   - 
