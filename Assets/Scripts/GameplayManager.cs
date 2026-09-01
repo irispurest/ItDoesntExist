@@ -11,13 +11,17 @@ public class GameplayManager : MonoBehaviour
 
     private void Awake()
     {
+        Time.timeScale = 1;
         inputSystem = new InputSystem_Actions();
         pauseMenu.SetActive(false);
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     private void OnEnable()
     {
+        Debug.Log("OnEnable");
         inputSystem.Enable();
+        inputSystem.Player.Enable();
         inputSystem.UI.Disable();
         inputSystem.Player.Interact.performed += interactionController.Interact;
         inputSystem.Player.TurnTorch.performed += interactionController.TurnTorch;
@@ -28,7 +32,6 @@ public class GameplayManager : MonoBehaviour
     private void OnDisable()
     {
         inputSystem.Disable();
-        inputSystem.UI.Disable();
         inputSystem.Player.Interact.performed -= interactionController.Interact;
         inputSystem.Player.TurnTorch.performed -= interactionController.TurnTorch;
         inputSystem.Player.Pause.performed -= Pause;
@@ -43,14 +46,13 @@ public class GameplayManager : MonoBehaviour
 
     private void Pause(InputAction.CallbackContext context)
     {
-        Time.timeScale = 0;
         pauseMenu.SetActive(true);
         inputSystem.UI.Enable();
         inputSystem.Player.Disable();
+        Cursor.lockState = CursorLockMode.Confined;
     }
     private void Resume(InputAction.CallbackContext context)
     {
-        Debug.Log("Resuming");
         Resume();
     }
 
@@ -60,5 +62,6 @@ public class GameplayManager : MonoBehaviour
         pauseMenu.SetActive(false);
         inputSystem.UI.Disable();
         inputSystem.Player.Enable();
+        Cursor.lockState = CursorLockMode.Locked;
     }
 }

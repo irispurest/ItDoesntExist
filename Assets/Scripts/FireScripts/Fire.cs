@@ -1,9 +1,7 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
-using Unity.VisualScripting;
 using UnityEngine.Rendering.Universal;
 
 public class Fire : Interactable
@@ -17,6 +15,8 @@ public class Fire : Interactable
     [SerializeField] private bool isLightingFires;
     [SerializeField] private FireLighter fireLighter;
     [SerializeField] private bool isNonLightable;
+    [SerializeField] private AudioSource blowSound;
+    [SerializeField] private AudioSource lightUpSound;
     
     private List<Fire> surroundingFires;
     
@@ -70,8 +70,17 @@ public class Fire : Interactable
         {
             affectedObject.OnDespawn += () =>
             {
-                StartCoroutine(TrySpawn(affectedObject));
+                if (gameObject != null && gameObject.activeInHierarchy)
+                    StartCoroutine(TrySpawn(affectedObject));
             };
+        }
+    }
+
+    private void OnDisable()
+    {
+        foreach (var affectedObject in affectedObjects)
+        {
+            affectedObject.OnDespawn = null;
         }
     }
 
@@ -97,6 +106,7 @@ public class Fire : Interactable
     {
         IsEnabled = false;
         isFading = true;
+        blowSound.Play();
 
         DOTween.To(
             () => light.intensity,
@@ -117,6 +127,7 @@ public class Fire : Interactable
         IsEnabled = true;
         isFading = true;
         lightTrigger.enabled = true;
+        lightUpSound.Play();
         
         foreach (var affectedObject in affectedObjects)
         {

@@ -165,7 +165,9 @@ MonoBehaviour:
   isLightingFires: 0
   fireLighter: {fileID: 0}
   isNonLightable: 0
-  <IsEnabled>k__BackingField: 0
+  blowSound: {fileID: 0}
+  lightUpSound: {fileID: 0}
+  <IsEnabled>k__BackingField: 1
 --- !u!1 &6752845579780280615
 GameObject:
   m_ObjectHideFlags: 0
@@ -472,7 +474,7 @@ CircleCollider2D:
     m_Bits: 1
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 254
+    m_Bits: 246
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2

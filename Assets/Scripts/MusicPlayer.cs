@@ -1,16 +1,21 @@
+using System;
 using UnityEngine;
 
 public class MusicPlayer : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    AudioSource audioSource;
+    
+    private void Start()
     {
-        
-    }
+        audioSource = GetComponent<AudioSource>();
+        MusicPlayer[] players = FindObjectsByType<MusicPlayer>();
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (players.Length == 1)
+        {
+            audioSource.Play();
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+            Destroy(gameObject);
     }
 }

@@ -119,6 +119,150 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &120401664
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 120401665}
+  - component: {fileID: 120401667}
+  - component: {fileID: 120401666}
+  m_Layer: 5
+  m_Name: Hints
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &120401665
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120401664}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2070621185}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -110, y: -240}
+  m_SizeDelta: {x: 180, y: 60}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &120401666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120401664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Try to find exit!
+
+    Push rocks, play with fire.
+
+    Use restart button
+    if you got
+
+    soft-locked (hope you won''t)'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: dad604aca32156e40b7e1f21d05c4feb, type: 2}
+  m_sharedMaterial: {fileID: 354339916675871552, guid: dad604aca32156e40b7e1f21d05c4feb, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 12
+  m_fontSizeBase: 12
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 0
+  m_fontSizeMax: 0
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 0
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &120401667
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120401664}
+  m_CullTransparentMesh: 1
 --- !u!114 &185794164 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7451840210617360288, guid: 5e65823285c4be849bb0dce975953df8, type: 3}
@@ -130,6 +274,143 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6da00db2dd5fef49b0413a41dc06117, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ManifestedObject
+--- !u!1 &262345800
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 262345801}
+  - component: {fileID: 262345803}
+  - component: {fileID: 262345802}
+  m_Layer: 5
+  m_Name: Interaction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &262345801
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262345800}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2070621185}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 110, y: -260}
+  m_SizeDelta: {x: 180, y: 15}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &262345802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262345800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: E - turn on/off fire sources
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: dad604aca32156e40b7e1f21d05c4feb, type: 2}
+  m_sharedMaterial: {fileID: 354339916675871552, guid: dad604aca32156e40b7e1f21d05c4feb, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 12
+  m_fontSizeBase: 12
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 0
+  m_fontSizeMax: 0
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 0
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &262345803
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262345800}
+  m_CullTransparentMesh: 1
 --- !u!1 &374632663
 GameObject:
   m_ObjectHideFlags: 0
@@ -140,7 +421,9 @@ GameObject:
   m_Component:
   - component: {fileID: 374632665}
   - component: {fileID: 374632664}
-  - component: {fileID: 374632666}
+  - component: {fileID: 374632669}
+  - component: {fileID: 374632668}
+  - component: {fileID: 374632670}
   m_Layer: 0
   m_Name: Grid
   m_TagString: Untagged
@@ -178,7 +461,183 @@ Transform:
   - {fileID: 1517354384}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &374632666
+--- !u!66 &374632668
+CompositeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 374632663}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_GeometryType: 0
+  m_GenerationType: 0
+  m_EdgeRadius: 0
+  m_ColliderPaths:
+  - m_Collider: {fileID: 690325892}
+    m_ColliderPaths:
+    - - X: 100000000
+        Y: 60000000
+      - X: 80000000
+        Y: 60000000
+      - X: 80000000
+        Y: 90000000
+      - X: 50000000
+        Y: 90000000
+      - X: 50000000
+        Y: 60000000
+      - X: -100000000
+        Y: 60000000
+      - X: -100000000
+        Y: -60000000
+      - X: 100000000
+        Y: -60000000
+    - - X: -90000000
+        Y: -50000000
+      - X: -90000000
+        Y: 50000000
+      - X: 60000000
+        Y: 50000000
+      - X: 60000000
+        Y: 80000000
+      - X: 70000000
+        Y: 80000000
+      - X: 70000000
+        Y: 50000000
+      - X: 90000000
+        Y: 50000000
+      - X: 90000000
+        Y: 10000000
+      - X: 60000000
+        Y: 10000000
+      - X: 60000000
+        Y: -10000000
+      - X: 90000000
+        Y: -10000000
+      - X: 90000000
+        Y: -50000000
+    - - X: 40000000
+        Y: -10000000
+      - X: 50000000
+        Y: -10000000
+      - X: 50000000
+        Y: 10000000
+      - X: 40000000
+        Y: 10000000
+      - X: 40000000
+        Y: 20000000
+      - X: -20000000
+        Y: 20000000
+      - X: -20000000
+        Y: 30000000
+      - X: -40000000
+        Y: 30000000
+      - X: -40000000
+        Y: -20000000
+      - X: -20000000
+        Y: -20000000
+      - X: -20000000
+        Y: 0
+      - X: 20000000
+        Y: 0
+      - X: 20000000
+        Y: -40000000
+      - X: 40000000
+        Y: -40000000
+  m_CompositePaths:
+    m_Paths:
+    - - {x: 9.99997, y: -6}
+      - {x: 9.99997, y: 6}
+      - {x: 8, y: 6.0000296}
+      - {x: 7.9999704, y: 9}
+      - {x: 5, y: 8.99997}
+      - {x: 4.9999704, y: 6}
+      - {x: -10, y: 5.999971}
+      - {x: -9.99997, y: -6}
+    - - {x: 9, y: -4.9999704}
+      - {x: -9, y: -4.9999704}
+      - {x: -8.99997, y: 5}
+      - {x: 6, y: 5.000029}
+      - {x: 6.0000296, y: 8}
+      - {x: 7, y: 7.9999704}
+      - {x: 7.0000296, y: 5}
+      - {x: 9, y: 4.9999704}
+      - {x: 8.99997, y: 1}
+      - {x: 6, y: 0.99997073}
+      - {x: 6.000029, y: -1}
+      - {x: 9, y: -1.0000294}
+    - - {x: 3.999971, y: -4}
+      - {x: 4.0000296, y: -1}
+      - {x: 5, y: -0.99997073}
+      - {x: 4.999971, y: 1}
+      - {x: 4, y: 1.0000294}
+      - {x: 3.999971, y: 2}
+      - {x: -2, y: 2.0000293}
+      - {x: -2.0000293, y: 3}
+      - {x: -4, y: 2.999971}
+      - {x: -3.999971, y: -2}
+      - {x: -2, y: -1.9999708}
+      - {x: -1.9999707, y: 0}
+      - {x: 2, y: -0.0000294}
+      - {x: 2.0000293, y: -4}
+  m_VertexDistance: 0.0005
+  m_OffsetDistance: 0.00005
+  m_UseDelaunayMesh: 0
+  m_CompositeGameObject: {fileID: 374632663}
+--- !u!50 &374632669
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 374632663}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &374632670
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -187,11 +646,489 @@ MonoBehaviour:
   m_GameObject: {fileID: 374632663}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38f48a8d66b2adc46887f23a3a88ac01, type: 3}
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.2D.Runtime::UnityEngine.Rendering.Universal.CompositeShadowCaster2D
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.2D.Runtime::UnityEngine.Rendering.Universal.ShadowCaster2D
   m_ShadowGroup: 0
   m_Priority: 0
+  m_ComponentVersion: 6
+  m_HasRenderer: 0
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_AlphaCutoff: 0.1
+  m_ApplyToSortingLayers: 00000000
+  m_ShapePath:
+  - {x: -0.5, y: -0.5, z: 0}
+  - {x: -0.5, y: 0.5, z: 0}
+  - {x: 0.5, y: 0.5, z: 0}
+  - {x: 0.5, y: -0.5, z: 0}
+  m_ShapePathHash: 0
+  m_InstanceId: 0
+  m_ShadowShape2DComponent: {fileID: 374632668}
+  m_ShadowShape2DProvider:
+    rid: 8669140814528512007
+  m_ShadowCastingSource: 2
+  m_ShadowMesh:
+    rid: 8669140814528512008
+  m_CastingOption: 1
+  m_PreviousTrimEdge: 0
+  m_PreviousEdgeProcessing: 1
+  m_PreviousShadowCastingSource: 2
+  m_PreviousShadowShape2DSource: {fileID: 374632668}
+  m_SelectionSources:
+    rid: 8669140814528512009
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 8669140814528512007
+      type: {class: ShadowShape2DProvider_Collider2D, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
+      data: 
+    - rid: 8669140814528512008
+      type: {class: ShadowMesh2D, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
+      data:
+        m_Vertices:
+        - position: {x: 9.9999695, y: 6, z: 0}
+          tangent: {x: -1, y: 0, z: 8, w: 6.0000305}
+        - position: {x: 8, y: 6.0000305, z: 0}
+          tangent: {x: -1, y: 0, z: 7.9999695, w: 9}
+        - position: {x: 7.9999695, y: 9, z: 0}
+          tangent: {x: -1, y: 0, z: 5, w: 8.9999695}
+        - position: {x: 5, y: 8.9999695, z: 0}
+          tangent: {x: -1, y: 0, z: 4.9999695, w: 6}
+        - position: {x: 4.9999695, y: 6, z: 0}
+          tangent: {x: -1, y: 0, z: -10, w: 5.9999695}
+        - position: {x: -10, y: 5.9999695, z: 0}
+          tangent: {x: -1, y: 0, z: -9.9999695, w: -6}
+        - position: {x: -9.9999695, y: -6, z: 0}
+          tangent: {x: -1, y: 0, z: 9.9999695, w: -6}
+        - position: {x: 9.9999695, y: -6, z: 0}
+          tangent: {x: -1, y: 0, z: 9.9999695, w: 6}
+        - position: {x: -9, y: -4.9999695, z: 0}
+          tangent: {x: -1, y: 0, z: -8.9999695, w: 5}
+        - position: {x: -8.9999695, y: 5, z: 0}
+          tangent: {x: -1, y: 0, z: 6, w: 5.0000305}
+        - position: {x: 6, y: 5.0000305, z: 0}
+          tangent: {x: -1, y: 0, z: 6.0000305, w: 8}
+        - position: {x: 6.0000305, y: 8, z: 0}
+          tangent: {x: -1, y: 0, z: 7, w: 7.9999695}
+        - position: {x: 7, y: 7.9999695, z: 0}
+          tangent: {x: -1, y: 0, z: 7.0000305, w: 5}
+        - position: {x: 7.0000305, y: 5, z: 0}
+          tangent: {x: -1, y: 0, z: 9, w: 4.9999695}
+        - position: {x: 9, y: 4.9999695, z: 0}
+          tangent: {x: -1, y: 0, z: 8.9999695, w: 1}
+        - position: {x: 8.9999695, y: 1, z: 0}
+          tangent: {x: -1, y: 0, z: 6, w: 0.9999695}
+        - position: {x: 6, y: 0.9999695, z: 0}
+          tangent: {x: -1, y: 0, z: 6.0000305, w: -1}
+        - position: {x: 6.0000305, y: -1, z: 0}
+          tangent: {x: -1, y: 0, z: 9, w: -1.0000305}
+        - position: {x: 9, y: -1.0000305, z: 0}
+          tangent: {x: -1, y: 0, z: 9, w: -4.9999695}
+        - position: {x: 9, y: -4.9999695, z: 0}
+          tangent: {x: -1, y: 0, z: -9, w: -4.9999695}
+        - position: {x: 4.0000305, y: -1, z: 0}
+          tangent: {x: -1, y: 0, z: 5, w: -0.9999695}
+        - position: {x: 5, y: -0.9999695, z: 0}
+          tangent: {x: -1, y: 0, z: 4.9999695, w: 1}
+        - position: {x: 4.9999695, y: 1, z: 0}
+          tangent: {x: -1, y: 0, z: 4, w: 1.0000305}
+        - position: {x: 4, y: 1.0000305, z: 0}
+          tangent: {x: -1, y: 0, z: 3.9999695, w: 2}
+        - position: {x: 3.9999695, y: 2, z: 0}
+          tangent: {x: -1, y: 0, z: -2, w: 2.0000305}
+        - position: {x: -2, y: 2.0000305, z: 0}
+          tangent: {x: -1, y: 0, z: -2.0000305, w: 3}
+        - position: {x: -2.0000305, y: 3, z: 0}
+          tangent: {x: -1, y: 0, z: -4, w: 2.9999695}
+        - position: {x: -4, y: 2.9999695, z: 0}
+          tangent: {x: -1, y: 0, z: -3.9999695, w: -2}
+        - position: {x: -3.9999695, y: -2, z: 0}
+          tangent: {x: -1, y: 0, z: -2, w: -1.9999695}
+        - position: {x: -2, y: -1.9999695, z: 0}
+          tangent: {x: -1, y: 0, z: -1.9999695, w: 0}
+        - position: {x: -1.9999695, y: 0, z: 0}
+          tangent: {x: -1, y: 0, z: 2, w: -0.000030517578}
+        - position: {x: 2, y: -0.000030517578, z: 0}
+          tangent: {x: -1, y: 0, z: 2.0000305, w: -4}
+        - position: {x: 2.0000305, y: -4, z: 0}
+          tangent: {x: -1, y: 0, z: 3.9999695, w: -4}
+        - position: {x: 3.9999695, y: -4, z: 0}
+          tangent: {x: -1, y: 0, z: 4.0000305, w: -1}
+        - position: {x: 9.9999695, y: 6, z: 0}
+          tangent: {x: 0, y: 0, z: 8, w: 6.0000305}
+        - position: {x: 8, y: 6.0000305, z: 0}
+          tangent: {x: 0, y: 0, z: 9.9999695, w: 6}
+        - position: {x: 9.9999695, y: 6, z: 0}
+          tangent: {x: 1, y: 0, z: 8, w: 6.0000305}
+        - position: {x: 9.9999695, y: 6, z: 0}
+          tangent: {x: 3, y: 0, z: 8, w: 6.0000305}
+        - position: {x: 8, y: 6.0000305, z: 0}
+          tangent: {x: 0, y: 0, z: 7.9999695, w: 9}
+        - position: {x: 7.9999695, y: 9, z: 0}
+          tangent: {x: 0, y: 0, z: 8, w: 6.0000305}
+        - position: {x: 8, y: 6.0000305, z: 0}
+          tangent: {x: 1, y: 0, z: 7.9999695, w: 9}
+        - position: {x: 8, y: 6.0000305, z: 0}
+          tangent: {x: 3, y: 0, z: 7.9999695, w: 9}
+        - position: {x: 7.9999695, y: 9, z: 0}
+          tangent: {x: 0, y: 0, z: 5, w: 8.9999695}
+        - position: {x: 5, y: 8.9999695, z: 0}
+          tangent: {x: 0, y: 0, z: 7.9999695, w: 9}
+        - position: {x: 7.9999695, y: 9, z: 0}
+          tangent: {x: 1, y: 0, z: 5, w: 8.9999695}
+        - position: {x: 7.9999695, y: 9, z: 0}
+          tangent: {x: 3, y: 0, z: 5, w: 8.9999695}
+        - position: {x: 5, y: 8.9999695, z: 0}
+          tangent: {x: 0, y: 0, z: 4.9999695, w: 6}
+        - position: {x: 4.9999695, y: 6, z: 0}
+          tangent: {x: 0, y: 0, z: 5, w: 8.9999695}
+        - position: {x: 5, y: 8.9999695, z: 0}
+          tangent: {x: 1, y: 0, z: 4.9999695, w: 6}
+        - position: {x: 5, y: 8.9999695, z: 0}
+          tangent: {x: 3, y: 0, z: 4.9999695, w: 6}
+        - position: {x: 4.9999695, y: 6, z: 0}
+          tangent: {x: 0, y: 0, z: -10, w: 5.9999695}
+        - position: {x: -10, y: 5.9999695, z: 0}
+          tangent: {x: 0, y: 0, z: 4.9999695, w: 6}
+        - position: {x: 4.9999695, y: 6, z: 0}
+          tangent: {x: 1, y: 0, z: -10, w: 5.9999695}
+        - position: {x: 4.9999695, y: 6, z: 0}
+          tangent: {x: 3, y: 0, z: -10, w: 5.9999695}
+        - position: {x: -10, y: 5.9999695, z: 0}
+          tangent: {x: 0, y: 0, z: -9.9999695, w: -6}
+        - position: {x: -9.9999695, y: -6, z: 0}
+          tangent: {x: 0, y: 0, z: -10, w: 5.9999695}
+        - position: {x: -10, y: 5.9999695, z: 0}
+          tangent: {x: 1, y: 0, z: -9.9999695, w: -6}
+        - position: {x: -10, y: 5.9999695, z: 0}
+          tangent: {x: 3, y: 0, z: -9.9999695, w: -6}
+        - position: {x: -9.9999695, y: -6, z: 0}
+          tangent: {x: 0, y: 0, z: 9.9999695, w: -6}
+        - position: {x: 9.9999695, y: -6, z: 0}
+          tangent: {x: 0, y: 0, z: -9.9999695, w: -6}
+        - position: {x: -9.9999695, y: -6, z: 0}
+          tangent: {x: 1, y: 0, z: 9.9999695, w: -6}
+        - position: {x: -9.9999695, y: -6, z: 0}
+          tangent: {x: 3, y: 0, z: 9.9999695, w: -6}
+        - position: {x: 9.9999695, y: -6, z: 0}
+          tangent: {x: 0, y: 0, z: 9.9999695, w: 6}
+        - position: {x: 9.9999695, y: 6, z: 0}
+          tangent: {x: 0, y: 0, z: 9.9999695, w: -6}
+        - position: {x: 9.9999695, y: -6, z: 0}
+          tangent: {x: 1, y: 0, z: 9.9999695, w: 6}
+        - position: {x: 9.9999695, y: -6, z: 0}
+          tangent: {x: 3, y: 0, z: 9.9999695, w: 6}
+        - position: {x: -9, y: -4.9999695, z: 0}
+          tangent: {x: 0, y: 0, z: -8.9999695, w: 5}
+        - position: {x: -8.9999695, y: 5, z: 0}
+          tangent: {x: 0, y: 0, z: -9, w: -4.9999695}
+        - position: {x: -9, y: -4.9999695, z: 0}
+          tangent: {x: 1, y: 0, z: -8.9999695, w: 5}
+        - position: {x: -9, y: -4.9999695, z: 0}
+          tangent: {x: 3, y: 0, z: -8.9999695, w: 5}
+        - position: {x: -8.9999695, y: 5, z: 0}
+          tangent: {x: 0, y: 0, z: 6, w: 5.0000305}
+        - position: {x: 6, y: 5.0000305, z: 0}
+          tangent: {x: 0, y: 0, z: -8.9999695, w: 5}
+        - position: {x: -8.9999695, y: 5, z: 0}
+          tangent: {x: 1, y: 0, z: 6, w: 5.0000305}
+        - position: {x: -8.9999695, y: 5, z: 0}
+          tangent: {x: 3, y: 0, z: 6, w: 5.0000305}
+        - position: {x: 6, y: 5.0000305, z: 0}
+          tangent: {x: 0, y: 0, z: 6.0000305, w: 8}
+        - position: {x: 6.0000305, y: 8, z: 0}
+          tangent: {x: 0, y: 0, z: 6, w: 5.0000305}
+        - position: {x: 6, y: 5.0000305, z: 0}
+          tangent: {x: 1, y: 0, z: 6.0000305, w: 8}
+        - position: {x: 6, y: 5.0000305, z: 0}
+          tangent: {x: 3, y: 0, z: 6.0000305, w: 8}
+        - position: {x: 6.0000305, y: 8, z: 0}
+          tangent: {x: 0, y: 0, z: 7, w: 7.9999695}
+        - position: {x: 7, y: 7.9999695, z: 0}
+          tangent: {x: 0, y: 0, z: 6.0000305, w: 8}
+        - position: {x: 6.0000305, y: 8, z: 0}
+          tangent: {x: 1, y: 0, z: 7, w: 7.9999695}
+        - position: {x: 6.0000305, y: 8, z: 0}
+          tangent: {x: 3, y: 0, z: 7, w: 7.9999695}
+        - position: {x: 7, y: 7.9999695, z: 0}
+          tangent: {x: 0, y: 0, z: 7.0000305, w: 5}
+        - position: {x: 7.0000305, y: 5, z: 0}
+          tangent: {x: 0, y: 0, z: 7, w: 7.9999695}
+        - position: {x: 7, y: 7.9999695, z: 0}
+          tangent: {x: 1, y: 0, z: 7.0000305, w: 5}
+        - position: {x: 7, y: 7.9999695, z: 0}
+          tangent: {x: 3, y: 0, z: 7.0000305, w: 5}
+        - position: {x: 7.0000305, y: 5, z: 0}
+          tangent: {x: 0, y: 0, z: 9, w: 4.9999695}
+        - position: {x: 9, y: 4.9999695, z: 0}
+          tangent: {x: 0, y: 0, z: 7.0000305, w: 5}
+        - position: {x: 7.0000305, y: 5, z: 0}
+          tangent: {x: 1, y: 0, z: 9, w: 4.9999695}
+        - position: {x: 7.0000305, y: 5, z: 0}
+          tangent: {x: 3, y: 0, z: 9, w: 4.9999695}
+        - position: {x: 9, y: 4.9999695, z: 0}
+          tangent: {x: 0, y: 0, z: 8.9999695, w: 1}
+        - position: {x: 8.9999695, y: 1, z: 0}
+          tangent: {x: 0, y: 0, z: 9, w: 4.9999695}
+        - position: {x: 9, y: 4.9999695, z: 0}
+          tangent: {x: 1, y: 0, z: 8.9999695, w: 1}
+        - position: {x: 9, y: 4.9999695, z: 0}
+          tangent: {x: 3, y: 0, z: 8.9999695, w: 1}
+        - position: {x: 8.9999695, y: 1, z: 0}
+          tangent: {x: 0, y: 0, z: 6, w: 0.9999695}
+        - position: {x: 6, y: 0.9999695, z: 0}
+          tangent: {x: 0, y: 0, z: 8.9999695, w: 1}
+        - position: {x: 8.9999695, y: 1, z: 0}
+          tangent: {x: 1, y: 0, z: 6, w: 0.9999695}
+        - position: {x: 8.9999695, y: 1, z: 0}
+          tangent: {x: 3, y: 0, z: 6, w: 0.9999695}
+        - position: {x: 6, y: 0.9999695, z: 0}
+          tangent: {x: 0, y: 0, z: 6.0000305, w: -1}
+        - position: {x: 6.0000305, y: -1, z: 0}
+          tangent: {x: 0, y: 0, z: 6, w: 0.9999695}
+        - position: {x: 6, y: 0.9999695, z: 0}
+          tangent: {x: 1, y: 0, z: 6.0000305, w: -1}
+        - position: {x: 6, y: 0.9999695, z: 0}
+          tangent: {x: 3, y: 0, z: 6.0000305, w: -1}
+        - position: {x: 6.0000305, y: -1, z: 0}
+          tangent: {x: 0, y: 0, z: 9, w: -1.0000305}
+        - position: {x: 9, y: -1.0000305, z: 0}
+          tangent: {x: 0, y: 0, z: 6.0000305, w: -1}
+        - position: {x: 6.0000305, y: -1, z: 0}
+          tangent: {x: 1, y: 0, z: 9, w: -1.0000305}
+        - position: {x: 6.0000305, y: -1, z: 0}
+          tangent: {x: 3, y: 0, z: 9, w: -1.0000305}
+        - position: {x: 9, y: -1.0000305, z: 0}
+          tangent: {x: 0, y: 0, z: 9, w: -4.9999695}
+        - position: {x: 9, y: -4.9999695, z: 0}
+          tangent: {x: 0, y: 0, z: 9, w: -1.0000305}
+        - position: {x: 9, y: -1.0000305, z: 0}
+          tangent: {x: 1, y: 0, z: 9, w: -4.9999695}
+        - position: {x: 9, y: -1.0000305, z: 0}
+          tangent: {x: 3, y: 0, z: 9, w: -4.9999695}
+        - position: {x: 9, y: -4.9999695, z: 0}
+          tangent: {x: 0, y: 0, z: -9, w: -4.9999695}
+        - position: {x: -9, y: -4.9999695, z: 0}
+          tangent: {x: 0, y: 0, z: 9, w: -4.9999695}
+        - position: {x: 9, y: -4.9999695, z: 0}
+          tangent: {x: 1, y: 0, z: -9, w: -4.9999695}
+        - position: {x: 9, y: -4.9999695, z: 0}
+          tangent: {x: 3, y: 0, z: -9, w: -4.9999695}
+        - position: {x: 4.0000305, y: -1, z: 0}
+          tangent: {x: 0, y: 0, z: 5, w: -0.9999695}
+        - position: {x: 5, y: -0.9999695, z: 0}
+          tangent: {x: 0, y: 0, z: 4.0000305, w: -1}
+        - position: {x: 4.0000305, y: -1, z: 0}
+          tangent: {x: 1, y: 0, z: 5, w: -0.9999695}
+        - position: {x: 4.0000305, y: -1, z: 0}
+          tangent: {x: 3, y: 0, z: 5, w: -0.9999695}
+        - position: {x: 5, y: -0.9999695, z: 0}
+          tangent: {x: 0, y: 0, z: 4.9999695, w: 1}
+        - position: {x: 4.9999695, y: 1, z: 0}
+          tangent: {x: 0, y: 0, z: 5, w: -0.9999695}
+        - position: {x: 5, y: -0.9999695, z: 0}
+          tangent: {x: 1, y: 0, z: 4.9999695, w: 1}
+        - position: {x: 5, y: -0.9999695, z: 0}
+          tangent: {x: 3, y: 0, z: 4.9999695, w: 1}
+        - position: {x: 4.9999695, y: 1, z: 0}
+          tangent: {x: 0, y: 0, z: 4, w: 1.0000305}
+        - position: {x: 4, y: 1.0000305, z: 0}
+          tangent: {x: 0, y: 0, z: 4.9999695, w: 1}
+        - position: {x: 4.9999695, y: 1, z: 0}
+          tangent: {x: 1, y: 0, z: 4, w: 1.0000305}
+        - position: {x: 4.9999695, y: 1, z: 0}
+          tangent: {x: 3, y: 0, z: 4, w: 1.0000305}
+        - position: {x: 4, y: 1.0000305, z: 0}
+          tangent: {x: 0, y: 0, z: 3.9999695, w: 2}
+        - position: {x: 3.9999695, y: 2, z: 0}
+          tangent: {x: 0, y: 0, z: 4, w: 1.0000305}
+        - position: {x: 4, y: 1.0000305, z: 0}
+          tangent: {x: 1, y: 0, z: 3.9999695, w: 2}
+        - position: {x: 4, y: 1.0000305, z: 0}
+          tangent: {x: 3, y: 0, z: 3.9999695, w: 2}
+        - position: {x: 3.9999695, y: 2, z: 0}
+          tangent: {x: 0, y: 0, z: -2, w: 2.0000305}
+        - position: {x: -2, y: 2.0000305, z: 0}
+          tangent: {x: 0, y: 0, z: 3.9999695, w: 2}
+        - position: {x: 3.9999695, y: 2, z: 0}
+          tangent: {x: 1, y: 0, z: -2, w: 2.0000305}
+        - position: {x: 3.9999695, y: 2, z: 0}
+          tangent: {x: 3, y: 0, z: -2, w: 2.0000305}
+        - position: {x: -2, y: 2.0000305, z: 0}
+          tangent: {x: 0, y: 0, z: -2.0000305, w: 3}
+        - position: {x: -2.0000305, y: 3, z: 0}
+          tangent: {x: 0, y: 0, z: -2, w: 2.0000305}
+        - position: {x: -2, y: 2.0000305, z: 0}
+          tangent: {x: 1, y: 0, z: -2.0000305, w: 3}
+        - position: {x: -2, y: 2.0000305, z: 0}
+          tangent: {x: 3, y: 0, z: -2.0000305, w: 3}
+        - position: {x: -2.0000305, y: 3, z: 0}
+          tangent: {x: 0, y: 0, z: -4, w: 2.9999695}
+        - position: {x: -4, y: 2.9999695, z: 0}
+          tangent: {x: 0, y: 0, z: -2.0000305, w: 3}
+        - position: {x: -2.0000305, y: 3, z: 0}
+          tangent: {x: 1, y: 0, z: -4, w: 2.9999695}
+        - position: {x: -2.0000305, y: 3, z: 0}
+          tangent: {x: 3, y: 0, z: -4, w: 2.9999695}
+        - position: {x: -4, y: 2.9999695, z: 0}
+          tangent: {x: 0, y: 0, z: -3.9999695, w: -2}
+        - position: {x: -3.9999695, y: -2, z: 0}
+          tangent: {x: 0, y: 0, z: -4, w: 2.9999695}
+        - position: {x: -4, y: 2.9999695, z: 0}
+          tangent: {x: 1, y: 0, z: -3.9999695, w: -2}
+        - position: {x: -4, y: 2.9999695, z: 0}
+          tangent: {x: 3, y: 0, z: -3.9999695, w: -2}
+        - position: {x: -3.9999695, y: -2, z: 0}
+          tangent: {x: 0, y: 0, z: -2, w: -1.9999695}
+        - position: {x: -2, y: -1.9999695, z: 0}
+          tangent: {x: 0, y: 0, z: -3.9999695, w: -2}
+        - position: {x: -3.9999695, y: -2, z: 0}
+          tangent: {x: 1, y: 0, z: -2, w: -1.9999695}
+        - position: {x: -3.9999695, y: -2, z: 0}
+          tangent: {x: 3, y: 0, z: -2, w: -1.9999695}
+        - position: {x: -2, y: -1.9999695, z: 0}
+          tangent: {x: 0, y: 0, z: -1.9999695, w: 0}
+        - position: {x: -1.9999695, y: 0, z: 0}
+          tangent: {x: 0, y: 0, z: -2, w: -1.9999695}
+        - position: {x: -2, y: -1.9999695, z: 0}
+          tangent: {x: 1, y: 0, z: -1.9999695, w: 0}
+        - position: {x: -2, y: -1.9999695, z: 0}
+          tangent: {x: 3, y: 0, z: -1.9999695, w: 0}
+        - position: {x: -1.9999695, y: 0, z: 0}
+          tangent: {x: 0, y: 0, z: 2, w: -0.000030517578}
+        - position: {x: 2, y: -0.000030517578, z: 0}
+          tangent: {x: 0, y: 0, z: -1.9999695, w: 0}
+        - position: {x: -1.9999695, y: 0, z: 0}
+          tangent: {x: 1, y: 0, z: 2, w: -0.000030517578}
+        - position: {x: -1.9999695, y: 0, z: 0}
+          tangent: {x: 3, y: 0, z: 2, w: -0.000030517578}
+        - position: {x: 2, y: -0.000030517578, z: 0}
+          tangent: {x: 0, y: 0, z: 2.0000305, w: -4}
+        - position: {x: 2.0000305, y: -4, z: 0}
+          tangent: {x: 0, y: 0, z: 2, w: -0.000030517578}
+        - position: {x: 2, y: -0.000030517578, z: 0}
+          tangent: {x: 1, y: 0, z: 2.0000305, w: -4}
+        - position: {x: 2, y: -0.000030517578, z: 0}
+          tangent: {x: 3, y: 0, z: 2.0000305, w: -4}
+        - position: {x: 2.0000305, y: -4, z: 0}
+          tangent: {x: 0, y: 0, z: 3.9999695, w: -4}
+        - position: {x: 3.9999695, y: -4, z: 0}
+          tangent: {x: 0, y: 0, z: 2.0000305, w: -4}
+        - position: {x: 2.0000305, y: -4, z: 0}
+          tangent: {x: 1, y: 0, z: 3.9999695, w: -4}
+        - position: {x: 2.0000305, y: -4, z: 0}
+          tangent: {x: 3, y: 0, z: 3.9999695, w: -4}
+        - position: {x: 3.9999695, y: -4, z: 0}
+          tangent: {x: 0, y: 0, z: 4.0000305, w: -1}
+        - position: {x: 4.0000305, y: -1, z: 0}
+          tangent: {x: 0, y: 0, z: 3.9999695, w: -4}
+        - position: {x: 3.9999695, y: -4, z: 0}
+          tangent: {x: 1, y: 0, z: 4.0000305, w: -1}
+        - position: {x: 3.9999695, y: -4, z: 0}
+          tangent: {x: 3, y: 0, z: 4.0000305, w: -1}
+        - position: {x: 9.9999695, y: 6, z: 0}
+          tangent: {x: -1, y: 0, z: 0, w: 0}
+        - position: {x: 8, y: 6.0000305, z: 0}
+          tangent: {x: -1, y: 0, z: 0, w: 0}
+        - position: {x: 7.9999695, y: 9, z: 0}
+          tangent: {x: -1, y: 0, z: 0, w: 0}
+        - position: {x: 5, y: 8.9999695, z: 0}
+          tangent: {x: -1, y: 0, z: 0, w: 0}
+        - position: {x: 4.9999695, y: 6, z: 0}
+          tangent: {x: -1, y: 0, z: 0, w: 0}
+        - position: {x: -10, y: 5.9999695, z: 0}
+          tangent: {x: -1, y: 0, z: 0, w: 0}
+        - position: {x: -9.9999695, y: -6, z: 0}
+          tangent: {x: -1, y: 0, z: 0, w: 0}
+        - position: {x: 9.9999695, y: -6, z: 0}
+          tangent: {x: -1, y: 0, z: 0, w: 0}
+        - position: {x: -9, y: -4.9999695, z: 0}
+          tangent: {x: -1, y: 0, z: 0, w: 0}
+        - position: {x: -8.9999695, y: 5, z: 0}
+          tangent: {x: -1, y: 0, z: 0, w: 0}
+        - position: {x: 6, y: 5.0000305, z: 0}
+          tangent: {x: -1, y: 0, z: 0, w: 0}
+        - position: {x: 6.0000305, y: 8, z: 0}
+          tangent: {x: -1, y: 0, z: 0, w: 0}
+        - position: {x: 7, y: 7.9999695, z: 0}
+          tangent: {x: -1, y: 0, z: 0, w: 0}
+        - position: {x: 7.0000305, y: 5, z: 0}
+          tangent: {x: -1, y: 0, z: 0, w: 0}
+        - position: {x: 9, y: 4.9999695, z: 0}
+          tangent: {x: -1, y: 0, z: 0, w: 0}
+        - position: {x: 8.9999695, y: 1, z: 0}
+          tangent: {x: -1, y: 0, z: 0, w: 0}
+        - position: {x: 6, y: 0.9999695, z: 0}
+          tangent: {x: -1, y: 0, z: 0, w: 0}
+        - position: {x: 6.0000305, y: -1, z: 0}
+          tangent: {x: -1, y: 0, z: 0, w: 0}
+        - position: {x: 9, y: -1.0000305, z: 0}
+          tangent: {x: -1, y: 0, z: 0, w: 0}
+        - position: {x: 9, y: -4.9999695, z: 0}
+          tangent: {x: -1, y: 0, z: 0, w: 0}
+        - position: {x: 4.0000305, y: -1, z: 0}
+          tangent: {x: -1, y: 0, z: 0, w: 0}
+        - position: {x: 5, y: -0.9999695, z: 0}
+          tangent: {x: -1, y: 0, z: 0, w: 0}
+        - position: {x: 4.9999695, y: 1, z: 0}
+          tangent: {x: -1, y: 0, z: 0, w: 0}
+        - position: {x: 4, y: 1.0000305, z: 0}
+          tangent: {x: -1, y: 0, z: 0, w: 0}
+        - position: {x: 3.9999695, y: 2, z: 0}
+          tangent: {x: -1, y: 0, z: 0, w: 0}
+        - position: {x: -2, y: 2.0000305, z: 0}
+          tangent: {x: -1, y: 0, z: 0, w: 0}
+        - position: {x: -2.0000305, y: 3, z: 0}
+          tangent: {x: -1, y: 0, z: 0, w: 0}
+        - position: {x: -4, y: 2.9999695, z: 0}
+          tangent: {x: -1, y: 0, z: 0, w: 0}
+        - position: {x: -3.9999695, y: -2, z: 0}
+          tangent: {x: -1, y: 0, z: 0, w: 0}
+        - position: {x: -2, y: -1.9999695, z: 0}
+          tangent: {x: -1, y: 0, z: 0, w: 0}
+        - position: {x: -1.9999695, y: 0, z: 0}
+          tangent: {x: -1, y: 0, z: 0, w: 0}
+        - position: {x: 2, y: -0.000030517578, z: 0}
+          tangent: {x: -1, y: 0, z: 0, w: 0}
+        - position: {x: 2.0000305, y: -4, z: 0}
+          tangent: {x: -1, y: 0, z: 0, w: 0}
+        - position: {x: 3.9999695, y: -4, z: 0}
+          tangent: {x: -1, y: 0, z: 0, w: 0}
+        m_Indices: 000000002200000023000000230000000100000000000000010000002600000027000000270000000200000001000000020000002a0000002b0000002b0000000300000002000000030000002e0000002f0000002f0000000400000003000000040000003200000033000000330000000500000004000000050000003600000037000000370000000600000005000000060000003a0000003b0000003b0000000700000006000000070000003e0000003f0000003f0000000000000007000000000000002400000025000000010000002800000029000000020000002c0000002d000000030000003000000031000000040000003400000035000000050000003800000039000000060000003c0000003d000000070000004000000041000000080000004200000043000000430000000900000008000000090000004600000047000000470000000a000000090000000a0000004a0000004b0000004b0000000b0000000a0000000b0000004e0000004f0000004f0000000c0000000b0000000c0000005200000053000000530000000d0000000c0000000d0000005600000057000000570000000e0000000d0000000e0000005a0000005b0000005b0000000f0000000e0000000f0000005e0000005f0000005f000000100000000f000000100000006200000063000000630000001100000010000000110000006600000067000000670000001200000011000000120000006a0000006b0000006b0000001300000012000000130000006e0000006f0000006f00000008000000130000000800000044000000450000000900000048000000490000000a0000004c0000004d0000000b00000050000000510000000c00000054000000550000000d00000058000000590000000e0000005c0000005d0000000f0000006000000061000000100000006400000065000000110000006800000069000000120000006c0000006d000000130000007000000071000000140000007200000073000000730000001500000014000000150000007600000077000000770000001600000015000000160000007a0000007b0000007b0000001700000016000000170000007e0000007f0000007f0000001800000017000000180000008200000083000000830000001900000018000000190000008600000087000000870000001a000000190000001a0000008a0000008b0000008b0000001b0000001a0000001b0000008e0000008f0000008f0000001c0000001b0000001c0000009200000093000000930000001d0000001c0000001d0000009600000097000000970000001e0000001d0000001e0000009a0000009b0000009b0000001f0000001e0000001f0000009e0000009f0000009f000000200000001f00000020000000a2000000a3000000a3000000210000002000000021000000a6000000a7000000a70000001400000021000000140000007400000075000000150000007800000079000000160000007c0000007d0000001700000080000000810000001800000084000000850000001900000088000000890000001a0000008c0000008d0000001b00000090000000910000001c00000094000000950000001d00000098000000990000001e0000009c0000009d0000001f000000a0000000a100000020000000a4000000a500000021000000a8000000a9000000aa000000b8000000ab000000aa000000b9000000b8000000aa000000bc000000b9000000aa000000b1000000bc000000ab000000b6000000ac000000ab000000b7000000b6000000ab000000b8000000b7000000ac000000b5000000ad000000ac000000b6000000b5000000ad000000b5000000ae000000ae000000b3000000af000000ae000000b4000000b3000000ae000000b5000000b4000000af000000b2000000b0000000af000000b3000000b2000000b0000000bd000000b1000000b0000000b2000000bd000000b1000000bd000000bc000000b9000000bb000000ba000000b9000000bc000000bb000000be000000c0000000bf000000be000000c1000000c0000000be000000c9000000c1000000be000000ca000000c9000000be000000cb000000ca000000c1000000c9000000c2000000c2000000c9000000c3000000c3000000c5000000c4000000c3000000c8000000c5000000c3000000c9000000c8000000c5000000c8000000c6000000c6000000c8000000c7000000
+        m_LocalBounds:
+          m_Center: {x: -0.000015258789, y: 1.5, z: 0}
+          m_Extent: {x: 9.999985, y: 7.5, z: 0}
+        m_EdgeProcessing: 1
+        m_TrimEdge: 0
+        m_FlipX: 0
+        m_FlipY: 0
+        m_InitialTrim: 0
+    - rid: 8669140814528512009
+      type: {class: Shadow2DProviderSources, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
+      data:
+        m_SelectedHashCode: 0
+        m_SelectedSource:
+          rid: -2
+        m_Provider2DCache:
+          rid: 8669140814528512012
+    - rid: 8669140814528512012
+      type: {class: 'Provider2DCache`1[[UnityEngine.Rendering.Universal.ShadowShape2DProvider, Unity.RenderPipelines.Universal.2D.Runtime]]', ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
+      data:
+        m_Cache:
+        - m_Key:
+            m_TypeName: ShadowShape2DProvider_Collider2D
+            m_Component: {fileID: 374632668}
+            m_UsesComponent: 1
+          m_Value:
+            m_Provider:
+              rid: 8669140814528512013
+    - rid: 8669140814528512013
+      type: {class: ShadowShape2DProvider_Collider2D, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
+      data: 
 --- !u!1001 &381211047
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -326,81 +1263,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bdca8e1d2469fa247bc43bc32c510427, type: 3}
---- !u!1 &489661081
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 489661082}
-  - component: {fileID: 489661084}
-  - component: {fileID: 489661083}
-  m_Layer: 5
-  m_Name: Panel2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &489661082
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 489661081}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2070621185}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -110}
-  m_SizeDelta: {x: 0, y: -220}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &489661083
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 489661081}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.7075472, g: 0.7075472, b: 0.7075472, a: 1}
-  m_RaycastTarget: 0
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 2530564911472380330, guid: de792aa6e16ae3540bc924e8838284bb, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &489661084
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 489661081}
-  m_CullTransparentMesh: 1
 --- !u!20 &519420031 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 1627784307698387562, guid: 2239379b9ffffe645818f5f43d092c85, type: 3}
@@ -514,7 +1376,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 690325889}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
   m_Name: 
@@ -555,18 +1417,38 @@ MonoBehaviour:
       type: {class: ShadowMesh2D, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
       data:
         m_Vertices:
-        - position: {x: 8, y: -5, z: 0}
-          tangent: {x: -1, y: 0, z: -9, w: -5}
-        - position: {x: -9, y: -5, z: 0}
-          tangent: {x: -1, y: 0, z: -9, w: 4}
-        - position: {x: -9, y: 4, z: 0}
-          tangent: {x: -1, y: 0, z: -10, w: 4}
-        - position: {x: -10, y: 4, z: 0}
-          tangent: {x: -1, y: 0, z: -10, w: -6}
-        - position: {x: -10, y: -6, z: 0}
-          tangent: {x: -1, y: 0, z: 8, w: -6}
-        - position: {x: 8, y: -6, z: 0}
-          tangent: {x: -1, y: 0, z: 8, w: -5}
+        - position: {x: 6, y: 6, z: 0}
+          tangent: {x: -1, y: 0, z: -8, w: 6}
+        - position: {x: -8, y: 6, z: 0}
+          tangent: {x: -1, y: 0, z: -8, w: 5}
+        - position: {x: -8, y: 5, z: 0}
+          tangent: {x: -1, y: 0, z: 6, w: 5}
+        - position: {x: 6, y: 5, z: 0}
+          tangent: {x: -1, y: 0, z: 6, w: 6}
+        - position: {x: 10, y: 6, z: 0}
+          tangent: {x: -1, y: 0, z: 7, w: 6}
+        - position: {x: 7, y: 6, z: 0}
+          tangent: {x: -1, y: 0, z: 7, w: 5}
+        - position: {x: 7, y: 5, z: 0}
+          tangent: {x: -1, y: 0, z: 9, w: 5}
+        - position: {x: 9, y: 5, z: 0}
+          tangent: {x: -1, y: 0, z: 9, w: 1}
+        - position: {x: 9, y: 1, z: 0}
+          tangent: {x: -1, y: 0, z: 6, w: 1}
+        - position: {x: 6, y: 1, z: 0}
+          tangent: {x: -1, y: 0, z: 6, w: -1}
+        - position: {x: 6, y: -1, z: 0}
+          tangent: {x: -1, y: 0, z: 9, w: -1}
+        - position: {x: 9, y: -1, z: 0}
+          tangent: {x: -1, y: 0, z: 9, w: -5}
+        - position: {x: 9, y: -5, z: 0}
+          tangent: {x: -1, y: 0, z: -8, w: -5}
+        - position: {x: -8, y: -5, z: 0}
+          tangent: {x: -1, y: 0, z: -8, w: -6}
+        - position: {x: -8, y: -6, z: 0}
+          tangent: {x: -1, y: 0, z: 10, w: -6}
+        - position: {x: 10, y: -6, z: 0}
+          tangent: {x: -1, y: 0, z: 10, w: 6}
         - position: {x: 4, y: -1, z: 0}
           tangent: {x: -1, y: 0, z: 5, w: -1}
         - position: {x: 5, y: -1, z: 0}
@@ -595,62 +1477,134 @@ MonoBehaviour:
           tangent: {x: -1, y: 0, z: 4, w: -4}
         - position: {x: 4, y: -4, z: 0}
           tangent: {x: -1, y: 0, z: 4, w: -1}
-        - position: {x: 8, y: 1, z: 0}
-          tangent: {x: -1, y: 0, z: 6, w: 1}
+        - position: {x: 6, y: 6, z: 0}
+          tangent: {x: 0, y: 0, z: -8, w: 6}
+        - position: {x: -8, y: 6, z: 0}
+          tangent: {x: 0, y: 0, z: 6, w: 6}
+        - position: {x: 6, y: 6, z: 0}
+          tangent: {x: 1, y: 0, z: -8, w: 6}
+        - position: {x: 6, y: 6, z: 0}
+          tangent: {x: 3, y: 0, z: -8, w: 6}
+        - position: {x: -8, y: 6, z: 0}
+          tangent: {x: 0, y: 0, z: -8, w: 5}
+        - position: {x: -8, y: 5, z: 0}
+          tangent: {x: 0, y: 0, z: -8, w: 6}
+        - position: {x: -8, y: 6, z: 0}
+          tangent: {x: 1, y: 0, z: -8, w: 5}
+        - position: {x: -8, y: 6, z: 0}
+          tangent: {x: 3, y: 0, z: -8, w: 5}
+        - position: {x: -8, y: 5, z: 0}
+          tangent: {x: 0, y: 0, z: 6, w: 5}
+        - position: {x: 6, y: 5, z: 0}
+          tangent: {x: 0, y: 0, z: -8, w: 5}
+        - position: {x: -8, y: 5, z: 0}
+          tangent: {x: 1, y: 0, z: 6, w: 5}
+        - position: {x: -8, y: 5, z: 0}
+          tangent: {x: 3, y: 0, z: 6, w: 5}
+        - position: {x: 6, y: 5, z: 0}
+          tangent: {x: 0, y: 0, z: 6, w: 6}
+        - position: {x: 6, y: 6, z: 0}
+          tangent: {x: 0, y: 0, z: 6, w: 5}
+        - position: {x: 6, y: 5, z: 0}
+          tangent: {x: 1, y: 0, z: 6, w: 6}
+        - position: {x: 6, y: 5, z: 0}
+          tangent: {x: 3, y: 0, z: 6, w: 6}
+        - position: {x: 10, y: 6, z: 0}
+          tangent: {x: 0, y: 0, z: 7, w: 6}
+        - position: {x: 7, y: 6, z: 0}
+          tangent: {x: 0, y: 0, z: 10, w: 6}
+        - position: {x: 10, y: 6, z: 0}
+          tangent: {x: 1, y: 0, z: 7, w: 6}
+        - position: {x: 10, y: 6, z: 0}
+          tangent: {x: 3, y: 0, z: 7, w: 6}
+        - position: {x: 7, y: 6, z: 0}
+          tangent: {x: 0, y: 0, z: 7, w: 5}
+        - position: {x: 7, y: 5, z: 0}
+          tangent: {x: 0, y: 0, z: 7, w: 6}
+        - position: {x: 7, y: 6, z: 0}
+          tangent: {x: 1, y: 0, z: 7, w: 5}
+        - position: {x: 7, y: 6, z: 0}
+          tangent: {x: 3, y: 0, z: 7, w: 5}
+        - position: {x: 7, y: 5, z: 0}
+          tangent: {x: 0, y: 0, z: 9, w: 5}
+        - position: {x: 9, y: 5, z: 0}
+          tangent: {x: 0, y: 0, z: 7, w: 5}
+        - position: {x: 7, y: 5, z: 0}
+          tangent: {x: 1, y: 0, z: 9, w: 5}
+        - position: {x: 7, y: 5, z: 0}
+          tangent: {x: 3, y: 0, z: 9, w: 5}
+        - position: {x: 9, y: 5, z: 0}
+          tangent: {x: 0, y: 0, z: 9, w: 1}
+        - position: {x: 9, y: 1, z: 0}
+          tangent: {x: 0, y: 0, z: 9, w: 5}
+        - position: {x: 9, y: 5, z: 0}
+          tangent: {x: 1, y: 0, z: 9, w: 1}
+        - position: {x: 9, y: 5, z: 0}
+          tangent: {x: 3, y: 0, z: 9, w: 1}
+        - position: {x: 9, y: 1, z: 0}
+          tangent: {x: 0, y: 0, z: 6, w: 1}
         - position: {x: 6, y: 1, z: 0}
-          tangent: {x: -1, y: 0, z: 6, w: -1}
+          tangent: {x: 0, y: 0, z: 9, w: 1}
+        - position: {x: 9, y: 1, z: 0}
+          tangent: {x: 1, y: 0, z: 6, w: 1}
+        - position: {x: 9, y: 1, z: 0}
+          tangent: {x: 3, y: 0, z: 6, w: 1}
+        - position: {x: 6, y: 1, z: 0}
+          tangent: {x: 0, y: 0, z: 6, w: -1}
         - position: {x: 6, y: -1, z: 0}
-          tangent: {x: -1, y: 0, z: 8, w: -1}
-        - position: {x: 8, y: -1, z: 0}
-          tangent: {x: -1, y: 0, z: 8, w: 1}
-        - position: {x: 8, y: -5, z: 0}
-          tangent: {x: 0, y: 0, z: -9, w: -5}
-        - position: {x: -9, y: -5, z: 0}
-          tangent: {x: 0, y: 0, z: 8, w: -5}
-        - position: {x: 8, y: -5, z: 0}
-          tangent: {x: 1, y: 0, z: -9, w: -5}
-        - position: {x: 8, y: -5, z: 0}
-          tangent: {x: 3, y: 0, z: -9, w: -5}
-        - position: {x: -9, y: -5, z: 0}
-          tangent: {x: 0, y: 0, z: -9, w: 4}
-        - position: {x: -9, y: 4, z: 0}
-          tangent: {x: 0, y: 0, z: -9, w: -5}
-        - position: {x: -9, y: -5, z: 0}
-          tangent: {x: 1, y: 0, z: -9, w: 4}
-        - position: {x: -9, y: -5, z: 0}
-          tangent: {x: 3, y: 0, z: -9, w: 4}
-        - position: {x: -9, y: 4, z: 0}
-          tangent: {x: 0, y: 0, z: -10, w: 4}
-        - position: {x: -10, y: 4, z: 0}
-          tangent: {x: 0, y: 0, z: -9, w: 4}
-        - position: {x: -9, y: 4, z: 0}
-          tangent: {x: 1, y: 0, z: -10, w: 4}
-        - position: {x: -9, y: 4, z: 0}
-          tangent: {x: 3, y: 0, z: -10, w: 4}
-        - position: {x: -10, y: 4, z: 0}
-          tangent: {x: 0, y: 0, z: -10, w: -6}
-        - position: {x: -10, y: -6, z: 0}
-          tangent: {x: 0, y: 0, z: -10, w: 4}
-        - position: {x: -10, y: 4, z: 0}
-          tangent: {x: 1, y: 0, z: -10, w: -6}
-        - position: {x: -10, y: 4, z: 0}
-          tangent: {x: 3, y: 0, z: -10, w: -6}
-        - position: {x: -10, y: -6, z: 0}
-          tangent: {x: 0, y: 0, z: 8, w: -6}
-        - position: {x: 8, y: -6, z: 0}
-          tangent: {x: 0, y: 0, z: -10, w: -6}
-        - position: {x: -10, y: -6, z: 0}
-          tangent: {x: 1, y: 0, z: 8, w: -6}
-        - position: {x: -10, y: -6, z: 0}
-          tangent: {x: 3, y: 0, z: 8, w: -6}
-        - position: {x: 8, y: -6, z: 0}
-          tangent: {x: 0, y: 0, z: 8, w: -5}
-        - position: {x: 8, y: -5, z: 0}
-          tangent: {x: 0, y: 0, z: 8, w: -6}
-        - position: {x: 8, y: -6, z: 0}
-          tangent: {x: 1, y: 0, z: 8, w: -5}
-        - position: {x: 8, y: -6, z: 0}
-          tangent: {x: 3, y: 0, z: 8, w: -5}
+          tangent: {x: 0, y: 0, z: 6, w: 1}
+        - position: {x: 6, y: 1, z: 0}
+          tangent: {x: 1, y: 0, z: 6, w: -1}
+        - position: {x: 6, y: 1, z: 0}
+          tangent: {x: 3, y: 0, z: 6, w: -1}
+        - position: {x: 6, y: -1, z: 0}
+          tangent: {x: 0, y: 0, z: 9, w: -1}
+        - position: {x: 9, y: -1, z: 0}
+          tangent: {x: 0, y: 0, z: 6, w: -1}
+        - position: {x: 6, y: -1, z: 0}
+          tangent: {x: 1, y: 0, z: 9, w: -1}
+        - position: {x: 6, y: -1, z: 0}
+          tangent: {x: 3, y: 0, z: 9, w: -1}
+        - position: {x: 9, y: -1, z: 0}
+          tangent: {x: 0, y: 0, z: 9, w: -5}
+        - position: {x: 9, y: -5, z: 0}
+          tangent: {x: 0, y: 0, z: 9, w: -1}
+        - position: {x: 9, y: -1, z: 0}
+          tangent: {x: 1, y: 0, z: 9, w: -5}
+        - position: {x: 9, y: -1, z: 0}
+          tangent: {x: 3, y: 0, z: 9, w: -5}
+        - position: {x: 9, y: -5, z: 0}
+          tangent: {x: 0, y: 0, z: -8, w: -5}
+        - position: {x: -8, y: -5, z: 0}
+          tangent: {x: 0, y: 0, z: 9, w: -5}
+        - position: {x: 9, y: -5, z: 0}
+          tangent: {x: 1, y: 0, z: -8, w: -5}
+        - position: {x: 9, y: -5, z: 0}
+          tangent: {x: 3, y: 0, z: -8, w: -5}
+        - position: {x: -8, y: -5, z: 0}
+          tangent: {x: 0, y: 0, z: -8, w: -6}
+        - position: {x: -8, y: -6, z: 0}
+          tangent: {x: 0, y: 0, z: -8, w: -5}
+        - position: {x: -8, y: -5, z: 0}
+          tangent: {x: 1, y: 0, z: -8, w: -6}
+        - position: {x: -8, y: -5, z: 0}
+          tangent: {x: 3, y: 0, z: -8, w: -6}
+        - position: {x: -8, y: -6, z: 0}
+          tangent: {x: 0, y: 0, z: 10, w: -6}
+        - position: {x: 10, y: -6, z: 0}
+          tangent: {x: 0, y: 0, z: -8, w: -6}
+        - position: {x: -8, y: -6, z: 0}
+          tangent: {x: 1, y: 0, z: 10, w: -6}
+        - position: {x: -8, y: -6, z: 0}
+          tangent: {x: 3, y: 0, z: 10, w: -6}
+        - position: {x: 10, y: -6, z: 0}
+          tangent: {x: 0, y: 0, z: 10, w: 6}
+        - position: {x: 10, y: 6, z: 0}
+          tangent: {x: 0, y: 0, z: 10, w: -6}
+        - position: {x: 10, y: -6, z: 0}
+          tangent: {x: 1, y: 0, z: 10, w: 6}
+        - position: {x: 10, y: -6, z: 0}
+          tangent: {x: 3, y: 0, z: 10, w: 6}
         - position: {x: 4, y: -1, z: 0}
           tangent: {x: 0, y: 0, z: 5, w: -1}
         - position: {x: 5, y: -1, z: 0}
@@ -763,42 +1717,10 @@ MonoBehaviour:
           tangent: {x: 1, y: 0, z: 4, w: -1}
         - position: {x: 4, y: -4, z: 0}
           tangent: {x: 3, y: 0, z: 4, w: -1}
-        - position: {x: 8, y: 1, z: 0}
-          tangent: {x: 0, y: 0, z: 6, w: 1}
-        - position: {x: 6, y: 1, z: 0}
-          tangent: {x: 0, y: 0, z: 8, w: 1}
-        - position: {x: 8, y: 1, z: 0}
-          tangent: {x: 1, y: 0, z: 6, w: 1}
-        - position: {x: 8, y: 1, z: 0}
-          tangent: {x: 3, y: 0, z: 6, w: 1}
-        - position: {x: 6, y: 1, z: 0}
-          tangent: {x: 0, y: 0, z: 6, w: -1}
-        - position: {x: 6, y: -1, z: 0}
-          tangent: {x: 0, y: 0, z: 6, w: 1}
-        - position: {x: 6, y: 1, z: 0}
-          tangent: {x: 1, y: 0, z: 6, w: -1}
-        - position: {x: 6, y: 1, z: 0}
-          tangent: {x: 3, y: 0, z: 6, w: -1}
-        - position: {x: 6, y: -1, z: 0}
-          tangent: {x: 0, y: 0, z: 8, w: -1}
-        - position: {x: 8, y: -1, z: 0}
-          tangent: {x: 0, y: 0, z: 6, w: -1}
-        - position: {x: 6, y: -1, z: 0}
-          tangent: {x: 1, y: 0, z: 8, w: -1}
-        - position: {x: 6, y: -1, z: 0}
-          tangent: {x: 3, y: 0, z: 8, w: -1}
-        - position: {x: 8, y: -1, z: 0}
-          tangent: {x: 0, y: 0, z: 8, w: 1}
-        - position: {x: 8, y: 1, z: 0}
-          tangent: {x: 0, y: 0, z: 8, w: -1}
-        - position: {x: 8, y: -1, z: 0}
-          tangent: {x: 1, y: 0, z: 8, w: 1}
-        - position: {x: 8, y: -1, z: 0}
-          tangent: {x: 3, y: 0, z: 8, w: 1}
-        m_Indices: 000000001800000019000000190000000100000000000000010000001c0000001d0000001d0000000200000001000000020000002000000021000000210000000300000002000000030000002400000025000000250000000400000003000000040000002800000029000000290000000500000004000000050000002c0000002d0000002d0000000000000005000000000000001a0000001b000000010000001e0000001f000000020000002200000023000000030000002600000027000000040000002a0000002b000000050000002e0000002f000000060000003000000031000000310000000700000006000000070000003400000035000000350000000800000007000000080000003800000039000000390000000900000008000000090000003c0000003d0000003d0000000a000000090000000a0000004000000041000000410000000b0000000a0000000b0000004400000045000000450000000c0000000b0000000c0000004800000049000000490000000d0000000c0000000d0000004c0000004d0000004d0000000e0000000d0000000e0000005000000051000000510000000f0000000e0000000f000000540000005500000055000000100000000f000000100000005800000059000000590000001100000010000000110000005c0000005d0000005d0000001200000011000000120000006000000061000000610000001300000012000000130000006400000065000000650000000600000013000000060000003200000033000000070000003600000037000000080000003a0000003b000000090000003e0000003f0000000a00000042000000430000000b00000046000000470000000c0000004a0000004b0000000d0000004e0000004f0000000e00000052000000530000000f0000005600000057000000100000005a0000005b000000110000005e0000005f000000120000006200000063000000130000006600000067000000140000006800000069000000690000001500000014000000150000006c0000006d0000006d0000001600000015000000160000007000000071000000710000001700000016000000170000007400000075000000750000001400000017000000140000006a0000006b000000150000006e0000006f000000160000007200000073000000170000007600000077000000
+        m_Indices: 000000001e0000001f0000001f0000000100000000000000010000002200000023000000230000000200000001000000020000002600000027000000270000000300000002000000030000002a0000002b0000002b0000000000000003000000000000002000000021000000010000002400000025000000020000002800000029000000030000002c0000002d000000040000002e0000002f0000002f0000000500000004000000050000003200000033000000330000000600000005000000060000003600000037000000370000000700000006000000070000003a0000003b0000003b0000000800000007000000080000003e0000003f0000003f0000000900000008000000090000004200000043000000430000000a000000090000000a0000004600000047000000470000000b0000000a0000000b0000004a0000004b0000004b0000000c0000000b0000000c0000004e0000004f0000004f0000000d0000000c0000000d0000005200000053000000530000000e0000000d0000000e0000005600000057000000570000000f0000000e0000000f0000005a0000005b0000005b000000040000000f000000040000003000000031000000050000003400000035000000060000003800000039000000070000003c0000003d0000000800000040000000410000000900000044000000450000000a00000048000000490000000b0000004c0000004d0000000c00000050000000510000000d00000054000000550000000e00000058000000590000000f0000005c0000005d000000100000005e0000005f0000005f0000001100000010000000110000006200000063000000630000001200000011000000120000006600000067000000670000001300000012000000130000006a0000006b0000006b0000001400000013000000140000006e0000006f0000006f0000001500000014000000150000007200000073000000730000001600000015000000160000007600000077000000770000001700000016000000170000007a0000007b0000007b0000001800000017000000180000007e0000007f0000007f0000001900000018000000190000008200000083000000830000001a000000190000001a0000008600000087000000870000001b0000001a0000001b0000008a0000008b0000008b0000001c0000001b0000001c0000008e0000008f0000008f0000001d0000001c0000001d000000920000009300000093000000100000001d000000100000006000000061000000110000006400000065000000120000006800000069000000130000006c0000006d000000140000007000000071000000150000007400000075000000160000007800000079000000170000007c0000007d0000001800000080000000810000001900000084000000850000001a00000088000000890000001b0000008c0000008d0000001c00000090000000910000001d0000009400000095000000
         m_LocalBounds:
-          m_Center: {x: -1, y: -1, z: 0}
-          m_Extent: {x: 9, y: 5, z: 0}
+          m_Center: {x: 1, y: 0, z: 0}
+          m_Extent: {x: 9, y: 6, z: 0}
         m_EdgeProcessing: 1
         m_TrimEdge: 0
         m_FlipX: 0
@@ -872,7 +1794,7 @@ TilemapCollider2D:
     m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_CompositeOperation: 0
+  m_CompositeOperation: 1
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
@@ -2139,7 +3061,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d263b7f6e4d0ca49a411c085790a276, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BlockLight
---- !u!1 &793422206
+--- !u!1 &786521640
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2147,72 +3069,136 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 793422207}
-  - component: {fileID: 793422209}
-  - component: {fileID: 793422208}
+  - component: {fileID: 786521641}
+  - component: {fileID: 786521643}
+  - component: {fileID: 786521642}
   m_Layer: 5
-  m_Name: Panel1
+  m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &793422207
+--- !u!224 &786521641
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 793422206}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_GameObject: {fileID: 786521640}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2070621185}
+  m_Father: {fileID: 1978328626}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 50.00003}
-  m_SizeDelta: {x: 0, y: -99.99994}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &793422208
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &786521642
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 793422206}
+  m_GameObject: {fileID: 786521640}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7075472, g: 0.7075472, b: 0.7075472, a: 1}
-  m_RaycastTarget: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2530564911472380330, guid: de792aa6e16ae3540bc924e8838284bb, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &793422209
+  m_text: 'To menu
+
+    (no saves!)'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: dad604aca32156e40b7e1f21d05c4feb, type: 2}
+  m_sharedMaterial: {fileID: 354339916675871552, guid: dad604aca32156e40b7e1f21d05c4feb, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 12
+  m_fontSizeBase: 12
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 0
+  m_fontSizeMax: 0
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 0
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &786521643
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 793422206}
+  m_GameObject: {fileID: 786521640}
   m_CullTransparentMesh: 1
 --- !u!1001 &798900695
 PrefabInstance:
@@ -2298,6 +3284,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2306123879704121701, guid: 19114e65bef15a0499808897d811c2ed, type: 3}
+      propertyPath: <IsEnabled>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8001551813345191901, guid: 19114e65bef15a0499808897d811c2ed, type: 3}
       propertyPath: m_Name
       value: Torch
@@ -2308,7 +3298,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8534472637649753549, guid: 19114e65bef15a0499808897d811c2ed, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.5
+      value: -3.5
       objectReference: {fileID: 0}
     - target: {fileID: 8534472637649753549, guid: 19114e65bef15a0499808897d811c2ed, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2347,6 +3337,143 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19114e65bef15a0499808897d811c2ed, type: 3}
+--- !u!1 &910015928
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 910015929}
+  - component: {fileID: 910015931}
+  - component: {fileID: 910015930}
+  m_Layer: 5
+  m_Name: WASD
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &910015929
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 910015928}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2070621185}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 110, y: -240}
+  m_SizeDelta: {x: 180, y: 15}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &910015930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 910015928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: WASD - walk
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: dad604aca32156e40b7e1f21d05c4feb, type: 2}
+  m_sharedMaterial: {fileID: 354339916675871552, guid: dad604aca32156e40b7e1f21d05c4feb, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 12
+  m_fontSizeBase: 12
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 0
+  m_fontSizeMax: 0
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 0
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &910015931
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 910015928}
+  m_CullTransparentMesh: 1
 --- !u!1 &976668448
 GameObject:
   m_ObjectHideFlags: 0
@@ -2428,7 +3555,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 8
   m_TargetDisplay: 0
 --- !u!224 &976668452
 RectTransform:
@@ -2442,8 +3569,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2124846736}
   - {fileID: 2070621185}
+  - {fileID: 2124846736}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2508,6 +3635,139 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58348e3184840bc4e8850104a53a6a85, type: 3}
+--- !u!1 &1079651340
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1079651341}
+  - component: {fileID: 1079651344}
+  - component: {fileID: 1079651343}
+  - component: {fileID: 1079651342}
+  m_Layer: 5
+  m_Name: Restart
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1079651341
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079651340}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1473012714}
+  m_Father: {fileID: 2070621185}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 34.00003}
+  m_SizeDelta: {x: 300, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1079651342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079651340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 0
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1079651343}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 808620355}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: ReloadScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1079651343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079651340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 2530564911472380330, guid: de792aa6e16ae3540bc924e8838284bb, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1079651344
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079651340}
+  m_CullTransparentMesh: 1
 --- !u!114 &1085074187 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6074300645575179435, guid: 58348e3184840bc4e8850104a53a6a85, type: 3}
@@ -2519,6 +3779,143 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6da00db2dd5fef49b0413a41dc06117, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ManifestedObject
+--- !u!1 &1099763790
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1099763791}
+  - component: {fileID: 1099763793}
+  - component: {fileID: 1099763792}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1099763791
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099763790}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1344699968}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &1099763792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099763790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Resume
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: dad604aca32156e40b7e1f21d05c4feb, type: 2}
+  m_sharedMaterial: {fileID: 354339916675871552, guid: dad604aca32156e40b7e1f21d05c4feb, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 11.1
+  m_fontSizeBase: 11.1
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 0
+  m_fontSizeMax: 0
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 0
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1099763793
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099763790}
+  m_CullTransparentMesh: 1
 --- !u!1 &1249238755
 GameObject:
   m_ObjectHideFlags: 0
@@ -2578,7 +3975,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: c258148e0d0558d40bc96e2647f5c083, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4633,6 +6030,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameplayManager
   movementController: {fileID: 1418991710}
   interactionController: {fileID: 1418991712}
+  pauseMenu: {fileID: 2070621184}
 --- !u!4 &1311998560
 Transform:
   m_ObjectHideFlags: 0
@@ -4659,6 +6057,139 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 750c463274b60f647b029e09eaac7fcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireLighter
+--- !u!1 &1344699967
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1344699968}
+  - component: {fileID: 1344699971}
+  - component: {fileID: 1344699970}
+  - component: {fileID: 1344699969}
+  m_Layer: 5
+  m_Name: Resume
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1344699968
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344699967}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1099763791}
+  m_Father: {fileID: 2070621185}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 106.00003}
+  m_SizeDelta: {x: 300, y: 60}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1344699969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344699967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 0
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1344699970}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1311998559}
+        m_TargetAssemblyTypeName: GameplayManager, Assembly-CSharp
+        m_MethodName: Resume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1344699970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344699967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 2530564911472380330, guid: de792aa6e16ae3540bc924e8838284bb, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1344699971
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344699967}
+  m_CullTransparentMesh: 1
 --- !u!114 &1418991710 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4793764206855769869, guid: 2239379b9ffffe645818f5f43d092c85, type: 3}
@@ -4742,6 +6273,143 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1885ba29c94f9564887257991b0da726, type: 3}
+--- !u!1 &1473012713
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1473012714}
+  - component: {fileID: 1473012716}
+  - component: {fileID: 1473012715}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1473012714
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473012713}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1079651341}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &1473012715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473012713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Restart
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: dad604aca32156e40b7e1f21d05c4feb, type: 2}
+  m_sharedMaterial: {fileID: 354339916675871552, guid: dad604aca32156e40b7e1f21d05c4feb, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 12
+  m_fontSizeBase: 12
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 0
+  m_fontSizeMax: 0
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 0
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1473012716
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473012713}
+  m_CullTransparentMesh: 1
 --- !u!1 &1517354383
 GameObject:
   m_ObjectHideFlags: 0
@@ -5081,6 +6749,67 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1001 &1659171328
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2306123879704121701, guid: 19114e65bef15a0499808897d811c2ed, type: 3}
+      propertyPath: <IsEnabled>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8001551813345191901, guid: 19114e65bef15a0499808897d811c2ed, type: 3}
+      propertyPath: m_Name
+      value: Torch (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8534472637649753549, guid: 19114e65bef15a0499808897d811c2ed, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8534472637649753549, guid: 19114e65bef15a0499808897d811c2ed, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8534472637649753549, guid: 19114e65bef15a0499808897d811c2ed, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8534472637649753549, guid: 19114e65bef15a0499808897d811c2ed, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8534472637649753549, guid: 19114e65bef15a0499808897d811c2ed, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8534472637649753549, guid: 19114e65bef15a0499808897d811c2ed, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8534472637649753549, guid: 19114e65bef15a0499808897d811c2ed, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8534472637649753549, guid: 19114e65bef15a0499808897d811c2ed, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8534472637649753549, guid: 19114e65bef15a0499808897d811c2ed, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8534472637649753549, guid: 19114e65bef15a0499808897d811c2ed, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 19114e65bef15a0499808897d811c2ed, type: 3}
 --- !u!1001 &1800938941
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5187,6 +6916,416 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1892825182
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1892825183}
+  - component: {fileID: 1892825185}
+  - component: {fileID: 1892825184}
+  m_Layer: 5
+  m_Name: Torch
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1892825183
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1892825182}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2070621185}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 110, y: -280}
+  m_SizeDelta: {x: 180, y: 15}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &1892825184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1892825182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: F - turn on/off your torch
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: dad604aca32156e40b7e1f21d05c4feb, type: 2}
+  m_sharedMaterial: {fileID: 354339916675871552, guid: dad604aca32156e40b7e1f21d05c4feb, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 12
+  m_fontSizeBase: 12
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 0
+  m_fontSizeMax: 0
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 0
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1892825185
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1892825182}
+  m_CullTransparentMesh: 1
+--- !u!1001 &1907125219
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2306123879704121701, guid: 19114e65bef15a0499808897d811c2ed, type: 3}
+      propertyPath: <IsEnabled>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8001551813345191901, guid: 19114e65bef15a0499808897d811c2ed, type: 3}
+      propertyPath: m_Name
+      value: Torch (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8534472637649753549, guid: 19114e65bef15a0499808897d811c2ed, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8534472637649753549, guid: 19114e65bef15a0499808897d811c2ed, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8534472637649753549, guid: 19114e65bef15a0499808897d811c2ed, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8534472637649753549, guid: 19114e65bef15a0499808897d811c2ed, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8534472637649753549, guid: 19114e65bef15a0499808897d811c2ed, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8534472637649753549, guid: 19114e65bef15a0499808897d811c2ed, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8534472637649753549, guid: 19114e65bef15a0499808897d811c2ed, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8534472637649753549, guid: 19114e65bef15a0499808897d811c2ed, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8534472637649753549, guid: 19114e65bef15a0499808897d811c2ed, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8534472637649753549, guid: 19114e65bef15a0499808897d811c2ed, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 19114e65bef15a0499808897d811c2ed, type: 3}
+--- !u!1 &1974508512
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1974508515}
+  - component: {fileID: 1974508514}
+  - component: {fileID: 1974508513}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1974508513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974508512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.UI.InputSystemUIInputModule
+  m_SendPointerHoverToParent: 1
+  m_MoveRepeatDelay: 0.5
+  m_MoveRepeatRate: 0.1
+  m_XRTrackingOrigin: {fileID: 0}
+  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_PointAction: {fileID: -1654692200621890270, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_MoveAction: {fileID: -8784545083839296357, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_SubmitAction: {fileID: 392368643174621059, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_CancelAction: {fileID: 7727032971491509709, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_LeftClickAction: {fileID: 3001919216989983466, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_MiddleClickAction: {fileID: -2185481485913320682, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_RightClickAction: {fileID: -4090225696740746782, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_ScrollWheelAction: {fileID: 6240969308177333660, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_TrackedDevicePositionAction: {fileID: 6564999863303420839, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_DeselectOnBackgroundClick: 1
+  m_PointerBehavior: 0
+  m_CursorLockBehavior: 0
+  m_ScrollDeltaPerTick: 6
+--- !u!114 &1974508514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974508512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventSystem
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1974508515
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974508512}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1978328625
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1978328626}
+  - component: {fileID: 1978328629}
+  - component: {fileID: 1978328628}
+  - component: {fileID: 1978328627}
+  m_Layer: 5
+  m_Name: To menu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1978328626
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1978328625}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 786521641}
+  m_Father: {fileID: 2070621185}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -20}
+  m_SizeDelta: {x: 300, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1978328627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1978328625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 0
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1978328628}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 808620355}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: ExitScene
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1978328628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1978328625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 2530564911472380330, guid: de792aa6e16ae3540bc924e8838284bb, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1978328629
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1978328625}
+  m_CullTransparentMesh: 1
 --- !u!1 &2070621184
 GameObject:
   m_ObjectHideFlags: 0
@@ -5199,12 +7338,12 @@ GameObject:
   - component: {fileID: 2070621187}
   - component: {fileID: 2070621186}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: PauseMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2070621185
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5217,8 +7356,13 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 793422207}
-  - {fileID: 489661082}
+  - {fileID: 1344699968}
+  - {fileID: 1978328626}
+  - {fileID: 1079651341}
+  - {fileID: 910015929}
+  - {fileID: 120401665}
+  - {fileID: 262345801}
+  - {fileID: 1892825183}
   m_Father: {fileID: 976668452}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -5393,7 +7537,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 0}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -5608,6 +7752,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2239379b9ffffe645818f5f43d092c85, type: 3}
+--- !u!1001 &6182644821307384595
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4600155094223258557, guid: 8912990ca4bdd374fa27c8b540a81e9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4600155094223258557, guid: 8912990ca4bdd374fa27c8b540a81e9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4600155094223258557, guid: 8912990ca4bdd374fa27c8b540a81e9d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4600155094223258557, guid: 8912990ca4bdd374fa27c8b540a81e9d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4600155094223258557, guid: 8912990ca4bdd374fa27c8b540a81e9d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4600155094223258557, guid: 8912990ca4bdd374fa27c8b540a81e9d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4600155094223258557, guid: 8912990ca4bdd374fa27c8b540a81e9d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4600155094223258557, guid: 8912990ca4bdd374fa27c8b540a81e9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4600155094223258557, guid: 8912990ca4bdd374fa27c8b540a81e9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4600155094223258557, guid: 8912990ca4bdd374fa27c8b540a81e9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7589603128626053862, guid: 8912990ca4bdd374fa27c8b540a81e9d, type: 3}
+      propertyPath: m_Name
+      value: BackgroundMusic
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8912990ca4bdd374fa27c8b540a81e9d, type: 3}
 --- !u!1001 &6453553048336313216
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5749,6 +7950,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TransTorch
       objectReference: {fileID: 0}
+    - target: {fileID: 7334156797798104237, guid: d92e28e0134e62a4296ff35c17875c7b, type: 3}
+      propertyPath: <IsEnabled>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7379078482735364959, guid: d92e28e0134e62a4296ff35c17875c7b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.5
@@ -5798,6 +8003,7 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1974508515}
   - {fileID: 1311998560}
   - {fileID: 594240959}
   - {fileID: 976668452}
@@ -5812,8 +8018,11 @@ SceneRoots:
   - {fileID: 6453553048336313216}
   - {fileID: 8924531748130645967}
   - {fileID: 874689041}
+  - {fileID: 1659171328}
+  - {fileID: 1907125219}
   - {fileID: 1436044805}
   - {fileID: 1056482785}
   - {fileID: 381211047}
   - {fileID: 798900695}
   - {fileID: 1800938941}
+  - {fileID: 6182644821307384595}

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3729694632172301370}
   - component: {fileID: 7479924199664748375}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: 8760144734191259234}
   - component: {fileID: 1643586769718893110}
   - component: {fileID: 1517721128414188045}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5001,7 +5001,7 @@ GameObject:
   - component: {fileID: 5483811536414262589}
   - component: {fileID: -3707859752706401472}
   - component: {fileID: 468358597315203609}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Rock
   m_TagString: Pushable
   m_Icon: {fileID: 0}
@@ -5146,7 +5146,6 @@ MonoBehaviour:
   raycastLayerMask:
     serializedVersion: 2
     m_Bits: 9
-  transparentTag: Transparent
 --- !u!114 &5483811536414262589
 MonoBehaviour:
   m_ObjectHideFlags: 0

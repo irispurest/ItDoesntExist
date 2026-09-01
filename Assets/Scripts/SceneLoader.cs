@@ -7,7 +7,7 @@ public class SceneLoader : MonoBehaviour
 {
     [SerializeField] private Image fadeImage;
     [SerializeField] private float fadeDuration;
-    private bool isFading;
+    private Tween tween;
 
     private void Start()
     {
@@ -17,15 +17,16 @@ public class SceneLoader : MonoBehaviour
     
     private void SwitchScene(int scene)
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(scene, LoadSceneMode.Single);
     }
     
     public void ExitScene(int scene)
     {
-        if (isFading) return;
-        isFading = true;
-        Debug.Log("Exiting scene");
-        fadeImage.DOFade(1.0f, fadeDuration).OnComplete(() => SwitchScene(scene));
+        tween.Kill();
+        tween = fadeImage.DOFade(1f, fadeDuration)
+            .SetUpdate(UpdateType.Normal, true)
+            .OnComplete(() => SwitchScene(scene));
     }
 
     public void ReloadScene()
@@ -35,8 +36,8 @@ public class SceneLoader : MonoBehaviour
 
     private void EnterScene()
     {
-        if (isFading) return;
-        isFading = true;
-        fadeImage.DOFade(0.0f, fadeDuration).OnComplete(() => isFading = false);
+        tween.Kill();
+        tween = fadeImage.DOFade(0f, fadeDuration)
+            .SetUpdate(UpdateType.Normal, true);
     }
 }

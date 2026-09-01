@@ -13,8 +13,8 @@ public class ManifestedObject : MonoBehaviour
     private Vector3 originalPosition;
     private ParticleSystem particleSystem;
     public bool IsEnabled { private set; get; }
-    public Action OnDespawn;
     public Action OnSpawn;
+    public Action OnDespawn;
     
     private void Awake()
     {
@@ -37,7 +37,6 @@ public class ManifestedObject : MonoBehaviour
 
     public void Despawn()
     {
-        Debug.Log("Despawn " + gameObject.name);
         particleSystem.Play();
         IsEnabled = false;
         collider.enabled = false;
