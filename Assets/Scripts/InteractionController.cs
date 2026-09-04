@@ -55,7 +55,6 @@ public class InteractionController : MonoBehaviour
     {
         if (other.TryGetComponent<Interactable>(out var interactable))
         {
-            Debug.Log("New interactable" + interactable.name);
             interactables.Add(interactable);
         }
     }
@@ -64,7 +63,6 @@ public class InteractionController : MonoBehaviour
     {
         if (other.TryGetComponent<Interactable>(out var interactable) && interactables.Contains(interactable))
         {
-            Debug.Log("Removing " + interactable.name);
             interactables.Remove(interactable);
         }
     }
