@@ -48,7 +48,7 @@ Material:
     - _PixelScale: 24
     m_Colors:
     - White: {r: 1, g: 1, b: 1, a: 1}
-    - _Color1: {r: 0.07058823, g: 0.23865953, b: 1, a: 1}
+    - _Color1: {r: 0.07058823, g: 0.28885475, b: 1, a: 1}
     - _Color2: {r: 0, g: 0.46900523, b: 1, a: 1}
     - _Color3: {r: 0.07843137, g: 1, b: 0.77288705, a: 1}
     - _Direction: {r: 0, g: -0.4, b: 0, a: 0}

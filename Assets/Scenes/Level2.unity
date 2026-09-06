@@ -1408,7 +1408,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2124846737}
     - target: {fileID: 3006974640951425389, guid: c9952acdfcf1f0c4ebb28b16e39950dd, type: 3}
-      propertyPath: fadeDuration
+      propertyPath: cursorLocked
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5642397837242879463, guid: c9952acdfcf1f0c4ebb28b16e39950dd, type: 3}
@@ -7258,7 +7258,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1447956442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8469,14 +8469,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 485109451268522351, guid: 2239379b9ffffe645818f5f43d092c85, type: 3}
-      propertyPath: m_ExcludeLayers.m_Bits
-      value: 383
-      objectReference: {fileID: 0}
-    - target: {fileID: 1053105175309793606, guid: 2239379b9ffffe645818f5f43d092c85, type: 3}
-      propertyPath: <IsEnabled>k__BackingField
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1983888674337617525, guid: 2239379b9ffffe645818f5f43d092c85, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.5
@@ -8516,10 +8508,6 @@ PrefabInstance:
     - target: {fileID: 1983888674337617525, guid: 2239379b9ffffe645818f5f43d092c85, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3144734946255370338, guid: 2239379b9ffffe645818f5f43d092c85, type: 3}
-      propertyPath: m_ExcludeLayers.m_Bits
-      value: 502
       objectReference: {fileID: 0}
     - target: {fileID: 4383327780609663546, guid: 2239379b9ffffe645818f5f43d092c85, type: 3}
       propertyPath: m_Name
@@ -8601,7 +8589,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 125834077819294577, guid: bdd7bff3a65403f4fb7a3dc4e7079bd4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.250006
+      value: 10.55
       objectReference: {fileID: 0}
     - target: {fileID: 125834077819294577, guid: bdd7bff3a65403f4fb7a3dc4e7079bd4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8665,7 +8653,6 @@ SceneRoots:
   - {fileID: 5636993719402153301}
   - {fileID: 6453553048336313216}
   - {fileID: 6182644821307384595}
-  - {fileID: 1447956444}
   - {fileID: 964110303}
   - {fileID: 1087703092}
   - {fileID: 549288482}
@@ -8677,3 +8664,4 @@ SceneRoots:
   - {fileID: 1349405063}
   - {fileID: 847112719}
   - {fileID: 606115346}
+  - {fileID: 1447956444}

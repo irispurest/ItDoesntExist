@@ -58,7 +58,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 467c03c53df3a9540883d6a728f37cc5, type: 2}
+  - {fileID: 2100000, guid: e2108362cf16ef645bb6dec1c286c2bd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -81,12 +81,12 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -4756028443593143600, guid: 221d06e4a1004ca45bd6046dcb03c1c6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c06f0a53f7318c34b8b90fa01a2b3003, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1
-  m_Size: {x: 1, y: 0.7}
+  m_Size: {x: 1, y: 0.75}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -4996,11 +4996,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4979723967976646681}
   - component: {fileID: 7425870274201670295}
-  - component: {fileID: 4083094922620705246}
   - component: {fileID: 7451840210617360288}
   - component: {fileID: 5483811536414262589}
   - component: {fileID: -3707859752706401472}
   - component: {fileID: 468358597315203609}
+  - component: {fileID: 3524776580210141796}
   m_Layer: 3
   m_Name: Rock
   m_TagString: Pushable
@@ -5085,52 +5085,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
---- !u!61 &4083094922620705246
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5161630253810015433}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.28}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 0.9, y: 0.5}
-  m_EdgeRadius: 0
 --- !u!114 &7451840210617360288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5176,7 +5130,7 @@ MonoBehaviour:
   - {x: 0.2057311, y: 0.12240362, z: 0}
   m_ShapePathHash: -856275119
   m_InstanceId: 0
-  m_ShadowShape2DComponent: {fileID: 4083094922620705246}
+  m_ShadowShape2DComponent: {fileID: 0}
   m_ShadowShape2DProvider:
     rid: 8669140777889955940
   m_ShadowCastingSource: 1
@@ -5186,12 +5140,15 @@ MonoBehaviour:
   m_PreviousTrimEdge: 0
   m_PreviousEdgeProcessing: 1
   m_PreviousShadowCastingSource: 1
-  m_PreviousShadowShape2DSource: {fileID: 4083094922620705246}
+  m_PreviousShadowShape2DSource: {fileID: 0}
   m_SelectionSources:
     rid: 8669140777889955938
   references:
     version: 2
     RefIds:
+    - rid: 1882977588702347276
+      type: {class: ShadowShape2DProvider_Collider2D, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
+      data: 
     - rid: 8669140777889955937
       type: {class: ShadowMesh2D, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
       data:
@@ -5279,11 +5236,11 @@ MonoBehaviour:
         m_Cache:
         - m_Key:
             m_TypeName: ShadowShape2DProvider_Collider2D
-            m_Component: {fileID: 4083094922620705246}
+            m_Component: {fileID: 3524776580210141796}
             m_UsesComponent: 1
           m_Value:
             m_Provider:
-              rid: 8669140777889955940
+              rid: 1882977588702347276
         - m_Key:
             m_TypeName: ShadowShape2DProvider_SpriteRenderer
             m_Component: {fileID: 7425870274201670295}
@@ -5347,3 +5304,40 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!70 &3524776580210141796
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5161630253810015433}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0.35}
+  m_Size: {x: 0.95, y: 0.65}
+  m_Direction: 1

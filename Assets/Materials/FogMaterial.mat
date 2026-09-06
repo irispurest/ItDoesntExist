@@ -50,19 +50,23 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Blend: 0.6
+    - _Blend: 0.45
+    - _Falloff: 10
     - _Float: -17.44
     - _GradientScale: 3
-    - _NormalStrength: 0.57
-    - _Opacity: 8
-    - _SimpleScale: 15
+    - _NormalStrength: 0
+    - _Opacity: 1
+    - _PixelScale: 32
+    - _SimpleScale: 20
+    - _Step: 0.2
     - _TransparencyStrength: 0.02
     - _VoronoiScale: 3.09
     m_Colors:
     - White: {r: 1, g: 1, b: 1, a: 1}
-    - _GradientMovement: {r: -0.15, g: 0.1, b: 0, a: 0}
-    - _NoiseColor: {r: 0.38959593, g: 0.7046787, b: 0.9716981, a: 1}
-    - _SimpleMovement: {r: 0.13, g: -0.09, b: 0, a: 0}
+    - _GradientMovement: {r: -0.04, g: 0.06, b: 0, a: 0}
+    - _NoiseColor: {r: 0.6229975, g: 0.6934953, b: 0.754717, a: 1}
+    - _SimpleMovement: {r: 0.2, g: -0.03, b: 0, a: 0}
+    - _SpriteSize: {r: 2, g: 8, b: 0, a: 0}
     - _Tiling: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

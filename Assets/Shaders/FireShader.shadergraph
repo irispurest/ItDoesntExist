@@ -149,6 +149,9 @@
         },
         {
             "m_Id": "e8026a154102407cb818b28a52bd7217"
+        },
+        {
+            "m_Id": "7c076467c9e048ba92e8ac22bf09d8d9"
         }
     ],
     "m_GroupDatas": [],
@@ -432,6 +435,20 @@
                     "m_Id": "03a443672ad140cda8bdd3c66b1d42ea"
                 },
                 "m_SlotId": 0
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "7c076467c9e048ba92e8ac22bf09d8d9"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "e83e347774fb4a9cbb2fda9197efdf0a"
+                },
+                "m_SlotId": 1366132531
             }
         },
         {
@@ -2423,6 +2440,29 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector2MaterialSlot",
+    "m_ObjectId": "5e0d9e854b18459abc151847068ffec2",
+    "m_Id": 1366132531,
+    "m_DisplayName": "UV",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_HideConnector": false,
+    "m_ShaderOutputName": "_UV",
+    "m_StageCapability": 3,
+    "m_CustomBinding": "",
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0
+    },
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
     "m_ObjectId": "608ddac17e9b410ab6c504c532be4bf8",
     "m_Id": 1,
@@ -2958,6 +2998,44 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.UVNode",
+    "m_ObjectId": "7c076467c9e048ba92e8ac22bf09d8d9",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "UV",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -4094.999755859375,
+            "y": 104.99999237060547,
+            "width": 145.0,
+            "height": 127.99999237060547
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "836e3e16aa9b420dbbba9089dba40e18"
+        }
+    ],
+    "synonyms": [
+        "texcoords",
+        "coords",
+        "coordinates"
+    ],
+    "m_Precision": 0,
+    "m_PreviewExpanded": false,
+    "m_DismissedVersion": 0,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_OutputChannel": 0
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "7c69aa7e876a41b184c5326609c15108",
     "m_Id": 3,
@@ -3245,6 +3323,33 @@
         "b": 0.5,
         "a": 1.0
     }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
+    "m_ObjectId": "836e3e16aa9b420dbbba9089dba40e18",
+    "m_Id": 0,
+    "m_DisplayName": "Out",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_HideConnector": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_CustomBinding": "",
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    },
+    "m_Labels": []
 }
 
 {
@@ -4603,6 +4708,9 @@
             "m_Id": "4208dfdec985402380a23282bd781691"
         },
         {
+            "m_Id": "5e0d9e854b18459abc151847068ffec2"
+        },
+        {
             "m_Id": "ad2911a5235442d18c945c3994a190e1"
         }
     ],
@@ -4617,11 +4725,13 @@
     "m_SerializedSubGraph": "{\n    \"subGraph\": {\n        \"fileID\": -5475051401550479605,\n        \"guid\": \"84f41b42c476a16428d37f2489a003fb\",\n        \"type\": 3\n    }\n}",
     "m_PropertyGuids": [
         "b7c2b59d-db83-4b5e-ae63-6d5312910561",
-        "c8303218-abd6-41eb-a07e-c48c33f4c097"
+        "c8303218-abd6-41eb-a07e-c48c33f4c097",
+        "6dc70b15-48d5-4c6c-8bf8-9be9783c5d99"
     ],
     "m_PropertyIds": [
         -822829918,
-        -1830874275
+        -1830874275,
+        1366132531
     ],
     "m_Dropdowns": [],
     "m_DropdownSelectedEntries": []

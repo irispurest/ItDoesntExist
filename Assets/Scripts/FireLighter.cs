@@ -9,10 +9,8 @@ public class FireLighter : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("OnTriggerEnter2D " + collision.gameObject.name);
         if (collision.CompareTag("Source"))
         {
-            Debug.Log("Enter fire" + collision.gameObject.name);
             Fire fire = collision.GetComponent<Fire>();
             OnEnterFire?.Invoke(fire);
         }

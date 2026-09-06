@@ -14,12 +14,10 @@ public class GameplayManager : MonoBehaviour
         Time.timeScale = 1;
         inputSystem = new InputSystem_Actions();
         pauseMenu.SetActive(false);
-        Cursor.lockState = CursorLockMode.Locked;
     }
 
     private void OnEnable()
     {
-        Debug.Log("OnEnable");
         inputSystem.Enable();
         inputSystem.Player.Enable();
         inputSystem.UI.Disable();
@@ -46,6 +44,7 @@ public class GameplayManager : MonoBehaviour
 
     private void Pause(InputAction.CallbackContext context)
     {
+        Time.timeScale = 0;
         pauseMenu.SetActive(true);
         inputSystem.UI.Enable();
         inputSystem.Player.Disable();

@@ -222,11 +222,14 @@ Transform:
   m_GameObject: {fileID: 3641267759753325123}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.04374, y: 0.46867, z: 0}
+  m_LocalPosition: {x: 0, y: 0.45, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3287137813954119866}
+  - {fileID: 7769719445038638553}
+  - {fileID: 4467717644574603004}
+  - {fileID: 8649705042007881088}
   - {fileID: 1202892537987913805}
   - {fileID: 6631336806283453607}
   m_Father: {fileID: 1983888674337617525}
@@ -358,10 +361,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8cf2dcf73a972c45a3991f66b3fc44a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovementController
-  speed: 2
+  speed: 2.5
   character: {fileID: 6231816688718930304}
-  pushSpeed: 1
-  pushThreshold: 0.4
+  pushSpeed: 1.5
+  pushThreshold: 0.5
   pushableTag: Pushable
 --- !u!58 &5589556331857178752
 CircleCollider2D:
@@ -459,12 +462,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4515022941624936343}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.21, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.42400002, y: 0.19099998, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 4467717644574603004}
+  m_Father: {fileID: 6231816688718930304}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2463997815756627131
 SpriteRenderer:
@@ -552,12 +555,11 @@ Transform:
   m_GameObject: {fileID: 5266190426330430288}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.112, y: 0.052, z: 0}
+  m_LocalPosition: {x: 0.42400002, y: -0.019000009, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 8649705042007881088}
-  m_Father: {fileID: 7769719445038638553}
+  m_Children: []
+  m_Father: {fileID: 6231816688718930304}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4199904144726185203
 SpriteRenderer:
@@ -645,8 +647,8 @@ Transform:
   m_GameObject: {fileID: 5826200031159470433}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.125, y: 3.125, z: 1}
+  m_LocalPosition: {x: 0, y: -0.125, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1983888674337617525}
@@ -698,14 +700,14 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -4756028443593143600, guid: 221d06e4a1004ca45bd6046dcb03c1c6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c06f0a53f7318c34b8b90fa01a2b3003, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1
-  m_Size: {x: 0.26, y: 0.12}
+  m_Size: {x: 0.75, y: 0.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -736,12 +738,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6030608046348795573}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.04374, y: -0.438, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 7769719445038638553}
+  m_Children: []
   m_Father: {fileID: 6231816688718930304}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6604325626671027261
@@ -829,13 +830,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6753800339852218264}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.26826, y: 0.36699998, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.312, y: -0.07100001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 4467717644574603004}
-  m_Father: {fileID: 3287137813954119866}
+  m_Children: []
+  m_Father: {fileID: 6231816688718930304}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7656488354562894920
 SpriteRenderer:
@@ -999,7 +999,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5033953518478838448}
   - component: {fileID: 1627784307698387562}
-  - component: {fileID: 3691085651235046858}
   - component: {fileID: 6609112710102076409}
   - component: {fileID: 4544530098948304497}
   m_Layer: 0
@@ -1075,30 +1074,6 @@ Camera:
   m_OcclusionCulling: 0
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!114 &3691085651235046858
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7910003568329089694}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c88f5cead0c0b2a4eb05b5900433f8d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.2D.Runtime::UnityEngine.Rendering.Universal.PixelPerfectCamera
-  m_ComponentVersion: 1
-  m_AssetsPPU: 32
-  m_RefResolutionX: 640
-  m_RefResolutionY: 360
-  m_CropFrame: 0
-  m_GridSnapping: 2
-  m_FilterMode: 0
-  m_UpscaleRT: 0
-  m_PixelSnapping: 0
-  m_CropFrameX: 0
-  m_CropFrameY: 0
-  m_StretchFill: 0
 --- !u!81 &6609112710102076409
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1277,7 +1252,7 @@ CircleCollider2D:
     m_Bits: 1
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 246
+    m_Bits: 502
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -1320,7 +1295,7 @@ MonoBehaviour:
   isNonLightable: 0
   blowSound: {fileID: 5714155094107301198}
   lightUpSound: {fileID: 4246900302733922345}
-  <IsEnabled>k__BackingField: 1
+  <IsEnabled>k__BackingField: 0
 --- !u!61 &485109451268522351
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1337,7 +1312,7 @@ BoxCollider2D:
     m_Bits: 128
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 127
+    m_Bits: 383
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2

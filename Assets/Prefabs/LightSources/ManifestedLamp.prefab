@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2471322098319334098}
   - component: {fileID: 562364109164259741}
   m_Layer: 3
-  m_Name: Lamp
+  m_Name: ManifestedLamp
   m_TagString: Source
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -65,7 +65,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a933b264bd2135947b3253c2c095fdfd, type: 2}
+  - {fileID: 2100000, guid: 5b0eeb403ee625d4eaee7d0df0ff8478, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -160,7 +160,8 @@ MonoBehaviour:
   renderer: {fileID: 928963303695845896}
   lightTrigger: {fileID: 1884027082428573953}
   light: {fileID: 5519479356558826963}
-  affectedObjects: []
+  affectedObjects:
+  - {fileID: 0}
   fadeDuration: 0.7
   extinguishable: 0
   isLightingFires: 0
@@ -443,7 +444,7 @@ MonoBehaviour:
   m_SelectionSources:
     rid: 8669140718447230992
   m_FalloffIntensity: 0.6
-  m_Color: {r: 1, g: 0.57857627, b: 0.19215685, a: 1}
+  m_Color: {r: 1, g: 0.19215685, b: 0.47120684, a: 1}
   m_Intensity: 1.2
   m_LightVolumeIntensity: 0.1
   m_LightVolumeEnabled: 0
@@ -613,7 +614,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -4756028443593143600, guid: 221d06e4a1004ca45bd6046dcb03c1c6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c06f0a53f7318c34b8b90fa01a2b3003, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

@@ -7,11 +7,14 @@ public class SceneLoader : MonoBehaviour
 {
     [SerializeField] private Image fadeImage;
     [SerializeField] private float fadeDuration;
+    [SerializeField] private bool cursorLocked = true;
     private Tween tween;
 
     private void Start()
     {
+        Time.timeScale = 1;
         fadeImage.color = Color.black;
+        Cursor.lockState = cursorLocked ? CursorLockMode.Locked : CursorLockMode.Confined;
         EnterScene();
     }
     
@@ -25,6 +28,7 @@ public class SceneLoader : MonoBehaviour
     {
         tween.Kill();
         tween = fadeImage.DOFade(1f, fadeDuration)
+            .SetEase(Ease.InOutCubic)
             .SetUpdate(UpdateType.Normal, true)
             .OnComplete(() => SwitchScene(scene));
     }
@@ -38,6 +42,7 @@ public class SceneLoader : MonoBehaviour
     {
         tween.Kill();
         tween = fadeImage.DOFade(0f, fadeDuration)
+            .SetEase(Ease.InOutCubic)
             .SetUpdate(UpdateType.Normal, true);
     }
 }

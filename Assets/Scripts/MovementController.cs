@@ -47,7 +47,7 @@ public class MovementController : MonoBehaviour
         else
         {
             float maxDot = 0;
-            Rigidbody2D bestRb = null;
+            Rigidbody2D bestRb = pushables[0];
             
             foreach (var pushable in pushables)
             {
